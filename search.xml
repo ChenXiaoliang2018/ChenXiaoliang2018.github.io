@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[你好，Hexo]]></title>
+    <title><![CDATA[关于闭包]]></title>
     <url>%2F2018%2F12%2F01%2F%E4%BD%A0%E5%A5%BD%EF%BC%8CHexo%2F</url>
-    <content type="text"><![CDATA[这个是一级标题这个是二级标题 这个是一级列表–这个是二级列表– 这个是二级列表– 这个是二级列表这个是文本链接这个是文字倾斜这个是文字加粗单行代码&lt;html&gt;&lt;/html&gt;多行代码123456&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt; &lt;/body&gt;&lt;/html&gt; 这个是文字引用]]></content>
+    <content type="text"></content>
       <categories>
-        <category>前端</category>
+        <category>技术</category>
       </categories>
+      <tags>
+        <tag>js</tag>
+      </tags>
   </entry>
 </search>
