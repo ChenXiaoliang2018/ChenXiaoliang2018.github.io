@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title></title>
+    <url>%2F2018%2F12%2F23%2Fcss2.0%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93%2F</url>
+    <content type="text"><![CDATA[#css2.0总结# 常用选择器基础选择器 通配符选择器 标签选择器 类选择器 id选择器高级选择器 后代选择器 交集选择器 并集选择器 常用属性 font-style: normal, italic font-weight: normal, bold font-size: 14px font-family: ‘Arial’, ‘Microsoft YaHei’ text-decoration: none, underline text-indent: 2em text-align: center background-color: rgba(0,0,0,.5) background-image: images/1.jpg background-repeat: repeat, no-repeat background-attachment: scroll, fixed 注：复合属性最好写在一起 关于marginmargin垂直方向上的塌陷解决方法：提前计算好 不能用儿子去踹父亲解决方法：父子盒模型之间的间距最好给父盒子添加padding 元素分类及特点块级元素 独占一行 可以设置宽高 不设置宽度，自动撑满父盒子宽度 如div，p，ul，li行内元素 并排显示 不可以设置宽高 大小由内容撑开 如a，img，span 浮动适用情况：即想要并排显示又想要设置宽高时。清浮动的两种有效方法： overflow: hidden 内墙法：div::after{ content:&quot;&quot;; clear:both; display: block; } 定位适用情况：涉及到压盖效果时。 相对定位 不脱标 相对的是距离自己最近的定位的祖先元素。 如果没有，则相对自身本来的位置定位。 绝对定位 脱标 绝对定位属性与top有关时，相对于页面做上，右上顶点定位，与bottom有关时，相对于首屏左下，右下顶点定位 固定定位 脱标 相对于浏览器窗口顶点定位，适用于返回顶部，弹窗的书写 注： z-index用于确定压盖顺序，默认为0，适用于有定位的元素。]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[关于DTD]]></title>
     <url>%2F2018%2F12%2F01%2F%E5%85%B3%E4%BA%8EDTD%2F</url>
     <content type="text"><![CDATA[DTD的作用DTD(document type definition): 文档类型声明，在html中规定了浏览器按照何种模式渲染html文件。 渲染模式由于历史原因，各个浏览器对于html文件有不同的渲染模式，甚至同一浏览器的不同版本也有不同，后来W3C组织制定了标准模式，对于老旧的网页通过定义特殊的文档头声明来渲染，而目前及未来的网页大部分将遵循标准模式来渲染。 模式介绍 标准模式（standards mode）： 也叫严格模式（strict mode），即w3c制定的模式。 怪异模式（quirks mode）： 也叫兼容模式（compatibility mode），过渡模式（transitional mode），适用于兼容版本比较早的ie浏览器。 如何判断浏览器渲染模式输入alert(window.top.document.compatMode),提示backcompat为怪异模式，提示css1compat为标准模式。 相关链接： https://www.cnblogs.com/ifonly/p/3312201.html https://hsivonen.fi/doctype/]]></content>
