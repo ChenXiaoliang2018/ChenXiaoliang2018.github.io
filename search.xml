@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[关于DTD]]></title>
     <url>%2F2018%2F12%2F01%2F%E5%85%B3%E4%BA%8EDTD%2F</url>
-    <content type="text"><![CDATA[DTD的作用]]></content>
+    <content type="text"><![CDATA[DTD的作用DTD(document type definition): 文档类型声明，在html中规定了浏览器按照何种模式渲染html文件。 渲染模式由于历史原因，各个浏览器对于html文件有不同的渲染模式，甚至同一浏览器的不同版本也有不同，后来W3C组织制定了标准模式，对于老旧的网页通过定义特殊的文档头声明来渲染，而目前及未来的网页大部分将遵循标准模式来渲染。 模式介绍 标准模式（standards mode）： 也叫严格模式（strict mode），即w3c制定的模式。 怪异模式（quirks mode）： 也叫兼容模式，过渡模式（transitional mode），适用于兼容版本比较早的ie浏览器。 如何判断浏览器渲染模式输入aleart(window.top.document.compatMode),提示backcompat为怪异模式，提示css1compat为标准模式。 相关链接： https://www.cnblogs.com/ifonly/p/3312201.html https://hsivonen.fi/doctype/]]></content>
       <categories>
         <category>技术</category>
       </categories>
