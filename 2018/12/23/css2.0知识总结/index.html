@@ -94,7 +94,7 @@
 <meta property="og:site_name" content="风不会停息">
 <meta property="og:description" content="常用选择器基础选择器 通配符选择器 标签选择器 类选择器 id选择器  注：权重之间为256进制 高级选择器 后代选择器（空格） 交集选择器（紧密） 并集选择器（逗号）  常用属性 font-style: normal, italic font-weight: normal, bold  （默认为400，加粗为700） font-size: 14px  （chrom浏览器默认字体为14px） fo">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-12-25T15:34:36.439Z">
+<meta property="og:updated_time" content="2018-12-25T15:58:19.981Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="css2.0知识总结">
 <meta name="twitter:description" content="常用选择器基础选择器 通配符选择器 标签选择器 类选择器 id选择器  注：权重之间为256进制 高级选择器 后代选择器（空格） 交集选择器（紧密） 并集选择器（逗号）  常用属性 font-style: normal, italic font-weight: normal, bold  （默认为400，加粗为700） font-size: 14px  （chrom浏览器默认字体为14px） fo">
@@ -462,8 +462,12 @@
 <li>相对于浏览器窗口顶点定位，适用于返回顶部，弹窗的书写</li>
 </ul>
 <p>注： z-index用于确定压盖顺序，默认为<strong>0</strong>，适用于有定位的元素。</p>
-<h2 id="关于margin"><a href="#关于margin" class="headerlink" title="关于margin"></a>关于margin</h2><h3 id="margin垂直方向上的塌陷"><a href="#margin垂直方向上的塌陷" class="headerlink" title="margin垂直方向上的塌陷"></a>margin垂直方向上的塌陷</h3><p>解决方法：提前计算好</p>
-<h3 id="不能用儿子去踹父亲"><a href="#不能用儿子去踹父亲" class="headerlink" title="不能用儿子去踹父亲"></a>不能用儿子去踹父亲</h3><p>解决方法：父子盒模型之间的间距最好给父盒子添加padding</p>
+<h2 id="关于margin"><a href="#关于margin" class="headerlink" title="关于margin"></a>关于margin</h2><h3 id="margin垂直方向上的塌陷"><a href="#margin垂直方向上的塌陷" class="headerlink" title="margin垂直方向上的塌陷"></a>margin垂直方向上的塌陷</h3><ul>
+<li>解决方法：提前计算好</li>
+</ul>
+<h3 id="不能用儿子去踹父亲"><a href="#不能用儿子去踹父亲" class="headerlink" title="不能用儿子去踹父亲"></a>不能用儿子去踹父亲</h3><ul>
+<li>解决方法：父子盒模型之间的间距最好给父盒子添加padding</li>
+</ul>
 <h2 id="关于插入图与背景图的使用"><a href="#关于插入图与背景图的使用" class="headerlink" title="关于插入图与背景图的使用"></a>关于插入图与背景图的使用</h2><ul>
 <li><strong>语义上的区别</strong>，插入图是占据大小的一个容器，而背景图只是一层背景；</li>
 <li>插入图可以设置宽高，<strong>图片也可以撑开img元素</strong>， 而<strong>背景图不可以撑开容器</strong>，可以通过background-size来设置背景图的大小；</li>
