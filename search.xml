@@ -3,7 +3,7 @@
   <entry>
     <title></title>
     <url>%2F2018%2F12%2F27%2F%E5%9C%A3%E6%9D%AF%E4%B8%8E%E5%8F%8C%E9%A3%9E%E7%BF%BC%E5%B8%83%E5%B1%80%2F</url>
-    <content type="text"><![CDATA[特点布局]]></content>
+    <content type="text"><![CDATA[特点 三列布局，两边宽度定宽，中间宽度自适应； 中间栏在浏览器中优先渲染 起源&emsp;&emsp;圣杯布局是由Kevin Cornell提出的一个布局观念，在国内最早淘宝UED流传开来，也叫双飞翼布局； 圣杯布局&emsp;&emsp;圣杯布局首先利用浮动实现三栏并排，然后利用margin负值分别让左右两栏去到各自的位置，也遮盖住了中间栏的内容，于是想利用父级容器的padding给两侧留出位置，但会发现左右两栏也被挤到中间栏里，于是利用相对定位将两栏移到各自位置就实现了两边定宽，中间自适应的布局，因为形似圣杯，所以也叫圣杯布局。]]></content>
   </entry>
   <entry>
     <title><![CDATA[html5知识总结]]></title>
