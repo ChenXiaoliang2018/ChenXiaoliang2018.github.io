@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[圣杯与双飞翼布局]]></title>
     <url>%2F2018%2F12%2F27%2F%E5%9C%A3%E6%9D%AF%E4%B8%8E%E5%8F%8C%E9%A3%9E%E7%BF%BC%E5%B8%83%E5%B1%80%2F</url>
-    <content type="text"><![CDATA[特点 三列布局，两边宽度定宽，中间宽度自适应； 中间栏在浏览器中优先渲染 起源&emsp;&emsp;圣杯布局是由Kevin Cornell提出的一个布局观念，在国内最早由淘宝UED流传开来，也叫双飞翼布局； 圣杯布局&emsp;&emsp;圣杯布局首先利用浮动实现三栏并排，然后利用margin负值分别让左右两栏去到各自的位置，也遮盖住了中间栏的内容，于是想利用父级容器的padding给两侧留出位置，但会发现左右两栏也被挤到中间栏里，于是利用相对定位将两栏移到各自位置就实现了两边定宽，中间自适应的布局，因为形似圣杯，所以也叫圣杯布局。 双飞翼布局&emsp;&emsp;双飞翼布局首先也利用用浮动实现三栏并排，不同的是给中间栏加上一层容器，然后利用中间栏的margin给两侧留出合适的宽度，最后左右两栏利用margin负值移动到左右两侧，实现两侧定宽，中间自适应的三栏布局，比圣杯布局也更加的简洁。 总结 margin负值是实现两种布局的核心； html结构中需要将中间栏放在最前，既可以浮动到最前面，也可以使浏览器优先渲染； 圣杯布局：https://github.com/ChenXiaoliang2018/odds-and-ends/blob/master/%E5%9C%A3%E6%9D%AF%E5%B8%83%E5%B1%80.html 双飞翼布局：https://github.com/ChenXiaoliang2018/odds-and-ends/blob/master/%E5%8F%8C%E9%A3%9E%E7%BF%BC%E5%B8%83%E5%B1%80.html]]></content>
+    <content type="text"><![CDATA[特点 三列布局，两边宽度定宽，中间宽度自适应； 中间栏在浏览器中优先渲染 起源&emsp;&emsp;圣杯布局是由Kevin Cornell提出的一个布局观念，在国内最早由淘宝UED流传开来，也叫双飞翼布局； 圣杯布局&emsp;&emsp;圣杯布局首先利用浮动实现三栏并排，然后利用margin负值分别让左右两栏去到各自的位置，也遮盖住了中间栏的内容，于是想利用父级容器的padding给两侧留出位置，但会发现左右两栏也被挤到中间栏里，于是利用相对定位将两栏移到各自位置就实现了两边定宽，中间自适应的布局，因为形似圣杯，所以也叫圣杯布局。 双飞翼布局&emsp;&emsp;双飞翼布局首先也利用用浮动实现三栏并排，不同的是给中间栏加上一层容器，然后利用中间栏的margin给两侧留出合适的宽度，最后左右两栏利用margin负值移动到左右两侧，实现两侧定宽，中间自适应的三栏布局，比圣杯布局也更加的简洁。 总结 margin负值是实现两种布局的核心； html结构中需要将中间栏放在最前，既可以浮动到最前面，也可以使浏览器优先渲染； 圣杯布局：https://github.com/ChenXiaoliang2018/odds-and-ends/blob/master/%E5%9C%A3%E6%9D%AF%E5%B8%83%E5%B1%80.html 双飞翼布局：https://github.com/ChenXiaoliang2018/odds-and-ends/blob/master/%E5%8F%8C%E9%A3%9E%E7%BF%BC%E5%B8%83%E5%B1%80.html 详细介绍：https://www.cnblogs.com/woodk/p/5147085.html]]></content>
       <categories>
         <category>css</category>
       </categories>
@@ -58,7 +58,7 @@
   <entry>
     <title><![CDATA[关于DTD]]></title>
     <url>%2F2018%2F12%2F01%2F%E5%85%B3%E4%BA%8EDTD%2F</url>
-    <content type="text"><![CDATA[DTD的作用DTD(document type definition): 文档类型声明，在html中规定了浏览器按照何种模式渲染html文件。 渲染模式由于历史原因，各个浏览器对于html文件有不同的渲染模式，甚至同一浏览器的不同版本也有不同，后来W3C组织制定了标准模式，对于老旧的网页通过定义特殊的文档头声明来渲染，而目前及未来的网页大部分将遵循标准模式来渲染。 模式介绍 标准模式（standards mode）： 也叫严格模式（strict mode），即w3c制定的模式。 怪异模式（quirks mode）： 也叫兼容模式（compatibility mode），过渡模式（transitional mode），适用于兼容版本比较早的ie浏览器。 如何判断浏览器渲染模式输入alert(window.top.document.compatMode),提示backcompat为怪异模式，提示css1compat为标准模式。 详细介绍： https://www.cnblogs.com/ifonly/p/3312201.html 模式查询：https://hsivonen.fi/doctype/]]></content>
+    <content type="text"><![CDATA[DTD的作用DTD(document type definition): 文档类型声明，在html中规定了浏览器按照何种模式渲染html文件。 渲染模式由于历史原因，各个浏览器对于html文件有不同的渲染模式，甚至同一浏览器的不同版本也有不同，后来W3C组织制定了标准模式，对于老旧的网页通过定义特殊的文档头声明来渲染，而目前及未来的网页大部分将遵循标准模式来渲染。 模式介绍 标准模式（standards mode）： 也叫严格模式（strict mode），即w3c制定的模式。 怪异模式（quirks mode）： 也叫兼容模式（compatibility mode），过渡模式（transitional mode），适用于兼容版本比较早的ie浏览器。 如何判断浏览器渲染模式输入alert(window.top.document.compatMode),提示backcompat为怪异模式，提示css1compat为标准模式。 详细介绍：https://www.cnblogs.com/ifonly/p/3312201.html 模式查询：https://hsivonen.fi/doctype/]]></content>
       <categories>
         <category>html</category>
       </categories>
