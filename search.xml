@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title></title>
+    <url>%2F2018%2F12%2F27%2F%E5%9C%A3%E6%9D%AF%E4%B8%8E%E5%8F%8C%E9%A3%9E%E7%BF%BC%E5%B8%83%E5%B1%80%2F</url>
+    <content type="text"><![CDATA[特点布局]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[html5知识总结]]></title>
     <url>%2F2018%2F12%2F26%2Fhtml5%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93%2F</url>
     <content type="text"><![CDATA[新增语义化标签 新添加的标签更加语义化，如header，nav，section(区域)，aside，article，footer等 表单元素新属性 placeholder: 占位符； autofocus: 自动获取焦点； required： 必填项； 更多的输入类型如email，tel，number等； 一等公民video与audio src： 资源路径； controls： 控制条； autoplay： 自动播放； loop： 循环播放； 本地存储h5新增了localStorage对象，用于本地存储； Api setItem(key, value) 用于存储数据； getItem(key) 用于取出数据； removeItem(key) 用于删除某个数据； clear() 用于删除全部数据； 注： localStorage保存数据的格式为字符串，所以存储数据时应当转化为字符串格式，取出数据时应当将字符串格式转为相应格式； sessionStorage与localStorage类似，只不过localStorage生命周期是永久，而sessionStorage在重启浏览器后会清除数据；]]></content>
