@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[ECMAScript3.0总结]]></title>
+    <url>%2F2018%2F12%2F27%2FECMAScript3.0%E6%80%BB%E7%BB%93%2F</url>
+    <content type="text"><![CDATA[js引入 js的引入依赖标签，少量的js直接书写在标签内，js文件则通过src属性引入。 因为浏览器自上而下渲染，为了让页面更快的加载，通常将script便签放在文档最后，之前；]]></content>
+      <categories>
+        <category>javascript</category>
+      </categories>
+      <tags>
+        <tag>知识</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[圣杯与双飞翼布局]]></title>
     <url>%2F2018%2F12%2F27%2F%E5%9C%A3%E6%9D%AF%E4%B8%8E%E5%8F%8C%E9%A3%9E%E7%BF%BC%E5%B8%83%E5%B1%80%2F</url>
     <content type="text"><![CDATA[特点 三列布局，两边宽度定宽，中间宽度自适应； 中间栏在浏览器中优先渲染 起源&emsp;&emsp;圣杯布局是由Kevin Cornell提出的一个布局观念，在国内最早由淘宝UED流传开来，也叫双飞翼布局； 圣杯布局&emsp;&emsp;圣杯布局首先利用浮动实现三栏并排，然后利用margin负值分别让左右两栏去到各自的位置，也遮盖住了中间栏的内容，于是想利用父级容器的padding给两侧留出位置，但会发现左右两栏也被挤到中间栏里，于是利用相对定位将两栏移到各自位置就实现了两边定宽，中间自适应的布局，因为形似圣杯，所以也叫圣杯布局。 双飞翼布局&emsp;&emsp;双飞翼布局首先也利用用浮动实现三栏并排，不同的是给中间栏加上一层容器，然后利用中间栏的margin给两侧留出合适的宽度，最后左右两栏利用margin负值移动到左右两侧，实现两侧定宽，中间自适应的三栏布局，比圣杯布局也更加的简洁。 总结 margin负值是实现两种布局的核心； html结构中需要将中间栏放在最前，既可以浮动到最前面，也可以使浏览器优先渲染； 圣杯布局：https://github.com/ChenXiaoliang2018/odds-and-ends/blob/master/%E5%9C%A3%E6%9D%AF%E5%B8%83%E5%B1%80.html 双飞翼布局：https://github.com/ChenXiaoliang2018/odds-and-ends/blob/master/%E5%8F%8C%E9%A3%9E%E7%BF%BC%E5%B8%83%E5%B1%80.html 详细介绍：https://www.cnblogs.com/woodk/p/5147085.html]]></content>
