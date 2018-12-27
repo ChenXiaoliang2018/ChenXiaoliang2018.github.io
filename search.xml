@@ -12,17 +12,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[关于闭包]]></title>
-    <url>%2F2018%2F12%2F28%2F%E5%85%B3%E4%BA%8E%E9%97%AD%E5%8C%85%2F</url>
-    <content type="text"></content>
-      <categories>
-        <category>javascript</category>
-      </categories>
-      <tags>
-        <tag>知识</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[ECMAScript3.0总结]]></title>
     <url>%2F2018%2F12%2F27%2FECMAScript3.0%E6%80%BB%E7%BB%93%2F</url>
     <content type="text"><![CDATA[js引入 js的引入依赖&lt;script&gt;标签，少量的js直接书写在标签内，js文件则通过src属性引入。 因为浏览器自上而下渲染，为了让页面更快的加载，通常将&lt;script&gt;便签放在文档最后，&lt;/body&gt;之前； 变量的声明与赋值声明规则 由数字，字母，下划线组成，且不能以数字开头； 不得与关键字，保留字冲突； 变量声明的提升 js预解析时，会全局查看是否有变量声明语句，如果有，会将其提升到到&lt;script&gt;内部最前面； 变量赋值语句并不会提升，仍然留在原位置； 数据类型分类 基本数据类型：number，string，boolean，null，undefined； 引用数据类型：object； null与undefined null表示一个空对象的指针，所以console.log(typeof null)的结果是object，null也常用来初始化保存数据为对象的变量； undefined指未初始化的变量，即该变量被声明而未被赋值； string与number的类型转换 string&gt;&gt;number: parseInt(‘’) 或 +string; number&gt;&gt;string: number + ‘’; 运算符数学运算符 +，-，*，/，%(取余)； 在进行数学运算时，数据会发生隐式转换； 加号进行数学运算，还会字符拼接； 注： 0/0的结果为NaN 比较运算符 ,&gt;=,&lt;,&lt;=等； 比较运算的结果一定是布尔值； ==与===的区别在于后者不仅会比较数值，还会比较数据类型； ！=与！==通常通过==，===来获取结果； 字符串比较是通过比较首字母在ASCII码表上的顺序来获取结果的； 注： NaN == NaN 结果为false； 3&gt;2&gt;1 结果为false； 逻辑运算符 ！，&amp;&amp;，|| 逻辑元算符的结果不一定为布尔值； 隐式转换： 非0数字，非空字符串将会转化为真； 短路语法： 只看第一项 a &amp;&amp; b：a为真，结果为b，a为假则结果为a，而不是假； a || b：a为真，结果为a，而不是真，a为假，则结果为b； 赋值运算符 ++，–，+=，-=，= ++a： 参与运算时先自加，然后再运算； a++： 参与运算时先运算，然后再自加； 无论是a++还是++a，只要对a再次操作，都取a自加后的值； 总结综合运算时，先运算贴身符号，如！，++，总体上按照数比逻的顺序运算，过程中逻辑运算符按照非与或的顺序计算。 综合运算：https://github.com/ChenXiaoliang2018/odds-and-ends/blob/master/%E7%BB%BC%E5%90%88%E8%BF%90%E7%AE%97.html 流程语句条件语句if语句 语法：if(条件) {} 或 if(条件){}else{} 当条件为真时，执行方括号里的内容； 如果条件时一个表达式，会先运算该表达式的布尔值，再决定是否执行方括号里的内容，特别是表达式为a&amp;&amp;b形式的时候，并不能实现条件的嵌套； 跳楼现象：无论有几个条件（else if），最终都只会满足一个条件，并执行一条内容； 三元运算符 语法： 条件？ 值1：值2； 当条件为真时，取值1，为假时取值2； 适用于二选一的情况； switch语句 语法： switch(条件) {case 值1： 语句1；case 值2： 语句2；…default: 语句n；}； 适用于条件运算的结果有多种的情况； 条件运算的结果应当注意与值1，值n的数据类型保持一致； 每一条执行语句后都必须添加break，default可以省略break； default为以上情况都不满足，执行语句n，可以省略break； 循环语句for语句 语法： for(初始值；限定条件；步长) {循环体}； 执行流程：初始值-&gt;限定条件-&gt;循环体-&gt;步长-&gt;限定条件-&gt;循环体…直到循环变量不满足限定条件结束循环； 循环变量为全局变量（由var声明）； for循环的结构很灵活； do while语句 语法： do{循环体}while(限定条件) 当循环变量满足限定条件时，执行循环体； 后测试循环语句，至少执行一次； while语句 语法：while(限定条件) {循环体} 可以和for循环相互转换； 前测试循环语句； 注：break与continue break：结束当前层的循环，是终止该层循环，不能结束外层循环，如果想结束外层循环，需要给外层添加标签； continue：结束当前层的的该次循环，是跳过这次循环，进行下次循环，并不能结束该层循环，同样需要给外层添加标签来实现控制外层循环； 这两个语句都没有简化代码的书写，不过大大减少了浏览器计算的次数，提升了性能； continue体验：https://github.com/ChenXiaoliang2018/odds-and-ends/blob/master/1000%E4%BB%A5%E5%86%85%E6%89%80%E6%9C%89%E7%9A%84%E8%B4%A8%E6%95%B0%EF%BC%88continue%E4%BC%98%E5%8C%96%EF%BC%89.html 函数函数的声明与提升函数的声明有两种方式： function关键字：function sum() {}; 函数表达式： var sum = function() {}; js预解析时会查看全局所有的变量，利用function关键字定义的函数实际是一个引用变量，所以会整体的提升到&lt;script&gt;内部的最前面，而利用函数表达式定义的函数仅仅会将该函数名提升到最前面，函数体不会得到提升； 闭包产生条件当外部函数嵌套内部函数，并且内部函数引用了外部变量时，就产生了闭包； 闭包是什么闭包实际上是包含了引用变量以及内部函数结构的对象。 闭包有什么作用 改变了局部变量的生命周期； 能够在函数外部操作函数内部的变量；]]></content>
