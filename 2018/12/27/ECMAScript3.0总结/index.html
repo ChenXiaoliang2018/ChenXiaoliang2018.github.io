@@ -86,20 +86,18 @@
 
 
 
-<meta name="description" content="js引入 js的引入依赖标签，少量的js直接书写在标签内，js文件则通过src属性引入。 因为浏览器自上而下渲染，为了让页面更快的加载，通常将script便签放在文档最后，之前；">
+<meta name="description" content="js引入 js的引入依赖&amp;lt;script&amp;gt;标签，少量的js直接书写在标签内，js文件则通过src属性引入。 因为浏览器自上而下渲染，为了让页面更快的加载，通常将&amp;lt;script&amp;gt;便签放在文档最后，&amp;lt;/body&amp;gt;之前；  变量的声明与赋值声明规则 由数字，字母，下划线组成，且不能以数字开头； 不得与关键字，保留字冲突；  变量声明的提升 js预解析时，会全局查看是否有">
 <meta name="keywords" content="知识">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ECMAScript3.0总结">
 <meta property="og:url" content="http://yoursite.com/2018/12/27/ECMAScript3.0总结/index.html">
 <meta property="og:site_name" content="风不会停息">
-<meta property="og:description" content="js引入 js的引入依赖标签，少量的js直接书写在标签内，js文件则通过src属性引入。 因为浏览器自上而下渲染，为了让页面更快的加载，通常将script便签放在文档最后，之前；">
+<meta property="og:description" content="js引入 js的引入依赖&amp;lt;script&amp;gt;标签，少量的js直接书写在标签内，js文件则通过src属性引入。 因为浏览器自上而下渲染，为了让页面更快的加载，通常将&amp;lt;script&amp;gt;便签放在文档最后，&amp;lt;/body&amp;gt;之前；  变量的声明与赋值声明规则 由数字，字母，下划线组成，且不能以数字开头； 不得与关键字，保留字冲突；  变量声明的提升 js预解析时，会全局查看是否有">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://github.com/ChenXiaoliang2018/images/blob/master/javascript.png">
-<meta property="og:updated_time" content="2018-12-27T14:20:05.515Z">
+<meta property="og:updated_time" content="2018-12-27T21:34:34.255Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ECMAScript3.0总结">
-<meta name="twitter:description" content="js引入 js的引入依赖标签，少量的js直接书写在标签内，js文件则通过src属性引入。 因为浏览器自上而下渲染，为了让页面更快的加载，通常将script便签放在文档最后，之前；">
-<meta name="twitter:image" content="https://github.com/ChenXiaoliang2018/images/blob/master/javascript.png">
+<meta name="twitter:description" content="js引入 js的引入依赖&amp;lt;script&amp;gt;标签，少量的js直接书写在标签内，js文件则通过src属性引入。 因为浏览器自上而下渲染，为了让页面更快的加载，通常将&amp;lt;script&amp;gt;便签放在文档最后，&amp;lt;/body&amp;gt;之前；  变量的声明与赋值声明规则 由数字，字母，下划线组成，且不能以数字开头； 不得与关键字，保留字冲突；  变量声明的提升 js预解析时，会全局查看是否有">
 
 
 
@@ -377,7 +375,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  68
+                  1.5k
                 </span>
               
 
@@ -402,12 +400,130 @@
       
 
       
-        <p><img src="https://github.com/ChenXiaoliang2018/images/blob/master/javascript.png" alt="javascript知识体系"></p>
-<h2 id="js引入"><a href="#js引入" class="headerlink" title="js引入"></a>js引入</h2><ul>
-<li>js的引入依赖<script>标签，少量的js直接书写在标签内，js文件则通过src属性引入。</li>
-<li>因为浏览器自上而下渲染，为了让页面更快的加载，通常将script便签放在文档最后，</body>之前；</li>
+        <h2 id="js引入"><a href="#js引入" class="headerlink" title="js引入"></a>js引入</h2><ul>
+<li>js的引入依赖<code>&lt;script&gt;</code>标签，少量的js直接书写在标签内，js文件则通过src属性引入。</li>
+<li>因为浏览器自上而下渲染，为了让页面更快的加载，通常将<code>&lt;script&gt;</code>便签放在文档最后，<code>&lt;/body&gt;</code>之前；</li>
 </ul>
-</script></li></ul>
+<h2 id="变量的声明与赋值"><a href="#变量的声明与赋值" class="headerlink" title="变量的声明与赋值"></a>变量的声明与赋值</h2><h3 id="声明规则"><a href="#声明规则" class="headerlink" title="声明规则"></a>声明规则</h3><ul>
+<li>由数字，字母，下划线组成，且不能以数字开头；</li>
+<li>不得与关键字，保留字冲突；</li>
+</ul>
+<h3 id="变量声明的提升"><a href="#变量声明的提升" class="headerlink" title="变量声明的提升"></a>变量声明的提升</h3><ul>
+<li>js预解析时，会全局查看是否有变量声明语句，如果有，会将其提升到到<code>&lt;script&gt;</code>内部最前面；</li>
+<li>变量赋值语句并不会提升，仍然留在原位置；</li>
+</ul>
+<h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><h3 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h3><ul>
+<li>基本数据类型：number，string，boolean，null，undefined；</li>
+<li>引用数据类型：object；</li>
+</ul>
+<h3 id="null与undefined"><a href="#null与undefined" class="headerlink" title="null与undefined"></a>null与undefined</h3><ul>
+<li>null表示一个空对象的指针，所以console.log(typeof null)的结果是object，null也常用来初始化保存数据为对象的变量；</li>
+<li>undefined指未初始化的变量，即该变量被声明而未被赋值；</li>
+</ul>
+<h3 id="string与number的类型转换"><a href="#string与number的类型转换" class="headerlink" title="string与number的类型转换"></a>string与number的类型转换</h3><ul>
+<li>string&gt;&gt;number: parseInt(‘’) 或 +string;</li>
+<li>number&gt;&gt;string: number + ‘’;</li>
+</ul>
+<h2 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h2><h3 id="数学运算符"><a href="#数学运算符" class="headerlink" title="数学运算符"></a>数学运算符</h3><ul>
+<li>+，-，*，/，%(取余)；</li>
+<li>在进行数学运算时，数据会发生隐式转换；</li>
+<li>加号进行数学运算，还会字符拼接；</li>
+</ul>
+<p>注：</p>
+<ul>
+<li>0/0的结果为NaN</li>
+</ul>
+<h3 id="比较运算符"><a href="#比较运算符" class="headerlink" title="比较运算符"></a>比较运算符</h3><ul>
+<li><blockquote>
+<p>,&gt;=,&lt;,&lt;=等；</p>
+</blockquote>
+</li>
+<li>比较运算的结果一定是布尔值；</li>
+<li>==与===的区别在于后者不仅会比较数值，还会比较数据类型；</li>
+<li>！=与！==通常通过==，===来获取结果；</li>
+<li>字符串比较是通过比较首字母在ASCII码表上的顺序来获取结果的；</li>
+</ul>
+<p>注：</p>
+<ul>
+<li>NaN == NaN 结果为false；</li>
+<li>3&gt;2&gt;1 结果为false；</li>
+</ul>
+<h2 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h2><ul>
+<li>！，&amp;&amp;，||</li>
+<li>逻辑元算符的结果不一定为布尔值；</li>
+<li>隐式转换： 非0数字，非空字符串将会转化为真；</li>
+<li>短路语法： 只看第一项</li>
+<li>a &amp;&amp; b：a为真，结果为b，a为假则结果为a，而不是假；</li>
+<li>a || b：a为真，结果为a，而不是真，a为假，则结果为b；</li>
+</ul>
+<h2 id="赋值运算符"><a href="#赋值运算符" class="headerlink" title="赋值运算符"></a>赋值运算符</h2><ul>
+<li>++，–，+=，-=，=</li>
+<li>++a： 参与运算时先自加，然后再运算；</li>
+<li>a++： 参与运算时先运算，然后再自加；</li>
+<li>无论是a++还是++a，只要对a再次操作，都取a自加后的值；</li>
+</ul>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>综合运算时，先运算贴身符号，如！，++，总体上按照数比逻的顺序运算，过程中逻辑运算符按照非与或的顺序计算。</p>
+<p>综合运算：<br><a href="https://github.com/ChenXiaoliang2018/odds-and-ends/blob/master/%E7%BB%BC%E5%90%88%E8%BF%90%E7%AE%97.html" title="综合运算" target="_blank" rel="noopener">https://github.com/ChenXiaoliang2018/odds-and-ends/blob/master/%E7%BB%BC%E5%90%88%E8%BF%90%E7%AE%97.html</a></p>
+<h2 id="流程语句"><a href="#流程语句" class="headerlink" title="流程语句"></a>流程语句</h2><h3 id="条件语句"><a href="#条件语句" class="headerlink" title="条件语句"></a>条件语句</h3><p><strong>if语句</strong></p>
+<ul>
+<li>语法：if(条件) {} 或 if(条件){}else{}</li>
+<li>当条件为真时，执行方括号里的内容；</li>
+<li>如果条件时一个表达式，会先运算该表达式的布尔值，再决定是否执行方括号里的内容，特别是表达式为a&amp;&amp;b形式的时候，并不能实现条件的嵌套；</li>
+<li>跳楼现象：无论有几个条件（else if），最终都只会满足一个条件，并执行一条内容；</li>
+</ul>
+<p><strong>三元运算符</strong></p>
+<ul>
+<li>语法： 条件？ 值1：值2；</li>
+<li>当条件为真时，取值1，为假时取值2；</li>
+<li>适用于二选一的情况；</li>
+</ul>
+<p><strong>switch语句</strong></p>
+<ul>
+<li>语法： switch(条件) {case 值1： 语句1；case 值2： 语句2；…default: 语句n；}；</li>
+<li>适用于条件运算的结果有多种的情况；</li>
+<li>条件运算的结果应当注意与值1，值n的数据类型保持一致；</li>
+<li>每一条执行语句后都必须添加break，default可以省略break；</li>
+<li>default为以上情况都不满足，执行语句n，可以省略break；</li>
+</ul>
+<h3 id="循环语句"><a href="#循环语句" class="headerlink" title="循环语句"></a>循环语句</h3><p><strong>for语句</strong></p>
+<ul>
+<li>语法： for(初始值；限定条件；步长) {循环体}；</li>
+<li>执行流程：初始值-&gt;限定条件-&gt;循环体-&gt;步长-&gt;限定条件-&gt;循环体…直到循环变量不满足限定条件结束循环；</li>
+<li>循环变量为全局变量（由var声明）；</li>
+<li>for循环的结构很灵活；</li>
+</ul>
+<p><strong>do while语句</strong></p>
+<ul>
+<li>语法： do{循环体}while(限定条件)</li>
+<li>当循环变量满足限定条件时，执行循环体；</li>
+<li>后测试循环语句，至少执行一次；</li>
+</ul>
+<p><strong>while语句</strong></p>
+<ul>
+<li>语法：while(限定条件) {循环体}</li>
+<li>可以和for循环相互转换；</li>
+<li>前测试循环语句；</li>
+</ul>
+<p>注：<strong>break与continue</strong></p>
+<ul>
+<li>break：结束<strong>当前层</strong>的循环，是终止该层循环，不能结束外层循环，如果想结束外层循环，需要给外层添加标签；</li>
+<li>continue：结束<strong>当前层的的该次循环</strong>，是跳过这次循环，进行下次循环，并不能结束该层循环，同样需要给外层添加标签来实现控制外层循环；</li>
+<li>这两个语句都没有简化代码的书写，不过大大减少了浏览器计算的次数，提升了性能；</li>
+</ul>
+<p>continue体验：<br><a href="https://github.com/ChenXiaoliang2018/odds-and-ends/blob/master/1000%E4%BB%A5%E5%86%85%E6%89%80%E6%9C%89%E7%9A%84%E8%B4%A8%E6%95%B0%EF%BC%88continue%E4%BC%98%E5%8C%96%EF%BC%89.html" title="1000以内的质数" target="_blank" rel="noopener">https://github.com/ChenXiaoliang2018/odds-and-ends/blob/master/1000%E4%BB%A5%E5%86%85%E6%89%80%E6%9C%89%E7%9A%84%E8%B4%A8%E6%95%B0%EF%BC%88continue%E4%BC%98%E5%8C%96%EF%BC%89.html</a></p>
+<h2 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h2><h3 id="函数的声明与提升"><a href="#函数的声明与提升" class="headerlink" title="函数的声明与提升"></a>函数的声明与提升</h3><p>函数的声明有两种方式：</p>
+<ul>
+<li>function关键字：function sum() {};</li>
+<li>函数表达式： var sum = function() {};</li>
+<li>js预解析时会查看全局所有的变量，利用function关键字定义的函数实际是一个引用变量，所以会整体的提升到<code>&lt;script&gt;</code>内部的最前面，而利用函数表达式定义的函数仅仅会将该函数名提升到最前面，函数体不会得到提升；</li>
+</ul>
+<h2 id="闭包"><a href="#闭包" class="headerlink" title="闭包"></a>闭包</h2><h3 id="产生条件"><a href="#产生条件" class="headerlink" title="产生条件"></a>产生条件</h3><p>当外部函数嵌套内部函数，并且内部函数引用了外部变量时，就产生了闭包；</p>
+<h3 id="闭包是什么"><a href="#闭包是什么" class="headerlink" title="闭包是什么"></a>闭包是什么</h3><p>闭包实际上是包含了引用变量以及内部函数结构的对象。</p>
+<h3 id="闭包有什么作用"><a href="#闭包有什么作用" class="headerlink" title="闭包有什么作用"></a>闭包有什么作用</h3><ul>
+<li>改变了局部变量的生命周期；</li>
+<li>能够在函数外部操作函数内部的变量；</li>
+</ul>
+
       
     </div>
     
@@ -446,6 +562,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/12/28/关于闭包/" rel="prev" title="关于闭包">
+                关于闭包 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -553,7 +673,7 @@ var jiathis_config={
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">9</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -618,7 +738,7 @@ var jiathis_config={
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#js引入"><span class="nav-number">1.</span> <span class="nav-text">js引入</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#js引入"><span class="nav-number">1.</span> <span class="nav-text">js引入</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#变量的声明与赋值"><span class="nav-number">2.</span> <span class="nav-text">变量的声明与赋值</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#声明规则"><span class="nav-number">2.1.</span> <span class="nav-text">声明规则</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#变量声明的提升"><span class="nav-number">2.2.</span> <span class="nav-text">变量声明的提升</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据类型"><span class="nav-number">3.</span> <span class="nav-text">数据类型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#分类"><span class="nav-number">3.1.</span> <span class="nav-text">分类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#null与undefined"><span class="nav-number">3.2.</span> <span class="nav-text">null与undefined</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#string与number的类型转换"><span class="nav-number">3.3.</span> <span class="nav-text">string与number的类型转换</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#运算符"><span class="nav-number">4.</span> <span class="nav-text">运算符</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#数学运算符"><span class="nav-number">4.1.</span> <span class="nav-text">数学运算符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#比较运算符"><span class="nav-number">4.2.</span> <span class="nav-text">比较运算符</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#逻辑运算符"><span class="nav-number">5.</span> <span class="nav-text">逻辑运算符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#赋值运算符"><span class="nav-number">6.</span> <span class="nav-text">赋值运算符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">7.</span> <span class="nav-text">总结</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#流程语句"><span class="nav-number">8.</span> <span class="nav-text">流程语句</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#条件语句"><span class="nav-number">8.1.</span> <span class="nav-text">条件语句</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#循环语句"><span class="nav-number">8.2.</span> <span class="nav-text">循环语句</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#函数"><span class="nav-number">9.</span> <span class="nav-text">函数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#函数的声明与提升"><span class="nav-number">9.1.</span> <span class="nav-text">函数的声明与提升</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#闭包"><span class="nav-number">10.</span> <span class="nav-text">闭包</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#产生条件"><span class="nav-number">10.1.</span> <span class="nav-text">产生条件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#闭包是什么"><span class="nav-number">10.2.</span> <span class="nav-text">闭包是什么</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#闭包有什么作用"><span class="nav-number">10.3.</span> <span class="nav-text">闭包有什么作用</span></a></li></ol></li></ol></div>
             
 
           </div>
