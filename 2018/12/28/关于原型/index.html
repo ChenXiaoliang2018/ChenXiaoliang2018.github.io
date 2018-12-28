@@ -86,19 +86,19 @@
 
 
 
-<meta name="description" content="写在前面 每个函数都有prototype属性（显式原型），默认指向一个空对象； 该空对象（原型对象）的constructor属性指向函数本身； 每个实例对象都有__proto__属性（隐式原型），且该属性对应其构造函数的prototype属性，即fun.__proto__ == Fun.prototype;">
+<meta name="description" content="写在前面 每个函数都有prototype属性（显式原型），默认指向一个空对象； 该空对象（原型对象）的constructor属性指向函数本身； 每个实例对象都有__proto__属性（隐式原型），且该属性对应其构造函数的prototype属性，即fun.__proto__ == Fun.prototype;    实例的隐式原型指向该构造函数的显式原型； 构造函数的prototype默认指向空对象">
 <meta property="og:type" content="article">
 <meta property="og:title" content="关于原型">
 <meta property="og:url" content="http://yoursite.com/2018/12/28/关于原型/index.html">
 <meta property="og:site_name" content="风不会停息">
-<meta property="og:description" content="写在前面 每个函数都有prototype属性（显式原型），默认指向一个空对象； 该空对象（原型对象）的constructor属性指向函数本身； 每个实例对象都有__proto__属性（隐式原型），且该属性对应其构造函数的prototype属性，即fun.__proto__ == Fun.prototype;">
+<meta property="og:description" content="写在前面 每个函数都有prototype属性（显式原型），默认指向一个空对象； 该空对象（原型对象）的constructor属性指向函数本身； 每个实例对象都有__proto__属性（隐式原型），且该属性对应其构造函数的prototype属性，即fun.__proto__ == Fun.prototype;    实例的隐式原型指向该构造函数的显式原型； 构造函数的prototype默认指向空对象">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://yoursite.com/2018/12/28/关于原型/prototype.jpg">
-<meta property="og:updated_time" content="2018-12-28T13:21:47.422Z">
+<meta property="og:image" content="http://yoursite.com/2018/12/28/关于原型/原型图解.jpg">
+<meta property="og:updated_time" content="2018-12-28T14:18:25.474Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="关于原型">
-<meta name="twitter:description" content="写在前面 每个函数都有prototype属性（显式原型），默认指向一个空对象； 该空对象（原型对象）的constructor属性指向函数本身； 每个实例对象都有__proto__属性（隐式原型），且该属性对应其构造函数的prototype属性，即fun.__proto__ == Fun.prototype;">
-<meta name="twitter:image" content="http://yoursite.com/2018/12/28/关于原型/prototype.jpg">
+<meta name="twitter:description" content="写在前面 每个函数都有prototype属性（显式原型），默认指向一个空对象； 该空对象（原型对象）的constructor属性指向函数本身； 每个实例对象都有__proto__属性（隐式原型），且该属性对应其构造函数的prototype属性，即fun.__proto__ == Fun.prototype;    实例的隐式原型指向该构造函数的显式原型； 构造函数的prototype默认指向空对象">
+<meta name="twitter:image" content="http://yoursite.com/2018/12/28/关于原型/原型图解.jpg">
 
 
 
@@ -354,7 +354,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  79
+                  247
                 </span>
               
 
@@ -384,7 +384,17 @@
 <li>该空对象（原型对象）的constructor属性指向函数本身；</li>
 <li>每个实例对象都有__proto__属性（隐式原型），且该属性对应其构造函数的prototype属性，即fun.__proto__ == Fun.prototype;</li>
 </ul>
-<p><img src="/2018/12/28/关于原型/prototype.jpg" alt="原型图解"></p>
+<p><img src="/2018/12/28/关于原型/原型图解.jpg" alt="原型图解"></p>
+<ol>
+<li>实例的隐式原型指向该构造函数的显式原型；</li>
+<li>构造函数的prototype默认指向空对象，可以看作是ES内置构造函数Object的实例；</li>
+<li>o1,o2也是Object的实例；</li>
+<li>ES内置构造函数Object的prototype同样指向一个空对象，即null；</li>
+<li>ES内置函数Function的prototype也指向一个空对象，可以看作是Object的实例；</li>
+<li><strong>ES内置函数Object也可以看作是内置函数Funciton的实例</strong>，即<strong>Object.<strong>proto</strong> == Function.prototype</strong>;</li>
+<li><strong>ES内置函数Function可以看作是自身的实例</strong>，即<strong>Function.<strong>proto</strong> == Function.prototype</strong>;</li>
+<li>构造函数Foo也是ES内置函数Function的实例，即<strong>任意函数都可以看作是Function的实例</strong>；</li>
+</ol>
 
       
     </div>
