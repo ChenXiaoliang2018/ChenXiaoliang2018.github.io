@@ -4,12 +4,6 @@
     <title><![CDATA[关于原型]]></title>
     <url>%2F2018%2F12%2F28%2F%E5%85%B3%E4%BA%8E%E5%8E%9F%E5%9E%8B%2F</url>
     <content type="text"><![CDATA[写在前面 每个函数都有prototype属性（显式原型），默认指向一个空对象； 该空对象（原型对象）的constructor属性指向函数本身； 每个实例对象都有__proto__属性（隐式原型），且该属性对应其构造函数的prototype属性，即fun.__proto__ == Fun.prototype;]]></content>
-      <categories>
-        <category>javascript</category>
-      </categories>
-      <tags>
-        <tag>知识</tag>
-      </tags>
   </entry>
   <entry>
     <title><![CDATA[ECMAScript3.0总结]]></title>
