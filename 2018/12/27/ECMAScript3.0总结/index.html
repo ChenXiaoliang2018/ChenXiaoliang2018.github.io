@@ -94,10 +94,15 @@
 <meta property="og:site_name" content="风不会停息">
 <meta property="og:description" content="js引入 js的引入依赖&amp;lt;script&amp;gt;标签，少量的js直接书写在标签内，js文件则通过src属性引入。 因为浏览器自上而下渲染，为了让页面更快的加载，通常将&amp;lt;script&amp;gt;便签放在文档最后，&amp;lt;/body&amp;gt;之前；  变量的声明与赋值声明规则 由数字，字母，下划线组成，且不能以数字开头； 不得与关键字，保留字冲突；  变量声明的提升 js预解析时，会全局查看是否有">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-12-27T21:34:34.255Z">
+<meta property="og:image" content="http://yoursite.com/2018/12/27/ECMAScript3.0总结/案例一.png">
+<meta property="og:image" content="http://yoursite.com/2018/12/27/ECMAScript3.0总结/案例二.png">
+<meta property="og:image" content="http://yoursite.com/2018/12/27/ECMAScript3.0总结/综合运算.png">
+<meta property="og:image" content="http://yoursite.com/2018/12/27/ECMAScript3.0总结/闭包.png">
+<meta property="og:updated_time" content="2018-12-28T21:53:38.124Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ECMAScript3.0总结">
 <meta name="twitter:description" content="js引入 js的引入依赖&amp;lt;script&amp;gt;标签，少量的js直接书写在标签内，js文件则通过src属性引入。 因为浏览器自上而下渲染，为了让页面更快的加载，通常将&amp;lt;script&amp;gt;便签放在文档最后，&amp;lt;/body&amp;gt;之前；  变量的声明与赋值声明规则 由数字，字母，下划线组成，且不能以数字开头； 不得与关键字，保留字冲突；  变量声明的提升 js预解析时，会全局查看是否有">
+<meta name="twitter:image" content="http://yoursite.com/2018/12/27/ECMAScript3.0总结/案例一.png">
 
 
 
@@ -412,6 +417,7 @@
 <li>js预解析时，会全局查看是否有变量声明语句，如果有，会将其提升到到<code>&lt;script&gt;</code>内部最前面；</li>
 <li>变量赋值语句并不会提升，仍然留在原位置；</li>
 </ul>
+<p>案例：<br><img src="/2018/12/27/ECMAScript3.0总结/案例一.png" alt="案例一"><br>等效于：<br><img src="/2018/12/27/ECMAScript3.0总结/案例二.png" alt="案例一"></p>
 <h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><h3 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h3><ul>
 <li>基本数据类型：number，string，boolean，null，undefined；</li>
 <li>引用数据类型：object；</li>
@@ -463,7 +469,7 @@
 <li>无论是a++还是++a，只要对a再次操作，都取a自加后的值；</li>
 </ul>
 <h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>综合运算时，先运算贴身符号，如！，++，总体上按照数比逻的顺序运算，过程中逻辑运算符按照非与或的顺序计算。</p>
-<p>综合运算：<br><a href="https://github.com/ChenXiaoliang2018/odds-and-ends/blob/master/%E7%BB%BC%E5%90%88%E8%BF%90%E7%AE%97.html" title="综合运算" target="_blank" rel="noopener">https://github.com/ChenXiaoliang2018/odds-and-ends/blob/master/%E7%BB%BC%E5%90%88%E8%BF%90%E7%AE%97.html</a></p>
+<p>综合运算：<br><img src="/2018/12/27/ECMAScript3.0总结/综合运算.png" alt="综合运算"></p>
 <h2 id="流程语句"><a href="#流程语句" class="headerlink" title="流程语句"></a>流程语句</h2><h3 id="条件语句"><a href="#条件语句" class="headerlink" title="条件语句"></a>条件语句</h3><p><strong>if语句</strong></p>
 <ul>
 <li>语法：if(条件) {} 或 if(条件){}else{}</li>
@@ -523,6 +529,7 @@
 <li>改变了局部变量的生命周期；</li>
 <li>能够在函数外部操作函数内部的变量；</li>
 </ul>
+<p>案例：<br><img src="/2018/12/27/ECMAScript3.0总结/闭包.png" alt="闭包案例"></p>
 
       
     </div>

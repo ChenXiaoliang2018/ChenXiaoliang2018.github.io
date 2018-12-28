@@ -89,15 +89,16 @@
 <meta name="description" content="window与document window指窗口，包含许多对窗口相关的属性与方法； document指文档，包含许多对于文档操作的属性与方法； window通常被省略，文档具体指html元素；  Math对象Math是js内置对象，提供以下api：  Math.random(); 随即产生[0, 1)之间的随机数； Math.floor(); 向下取整； Math.ceil(); 向上取整； M">
 <meta name="keywords" content="知识">
 <meta property="og:type" content="article">
-<meta property="og:title" content="ECMAScript3.0总结">
+<meta property="og:title" content="ECMAScript3.0补充">
 <meta property="og:url" content="http://yoursite.com/2018/12/29/ECMAScript3.0补充/index.html">
 <meta property="og:site_name" content="风不会停息">
 <meta property="og:description" content="window与document window指窗口，包含许多对窗口相关的属性与方法； document指文档，包含许多对于文档操作的属性与方法； window通常被省略，文档具体指html元素；  Math对象Math是js内置对象，提供以下api：  Math.random(); 随即产生[0, 1)之间的随机数； Math.floor(); 向下取整； Math.ceil(); 向上取整； M">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/2018/12/29/ECMAScript3.0补充/arguments.png">
-<meta property="og:updated_time" content="2018-12-28T21:26:16.296Z">
+<meta property="og:image" content="http://yoursite.com/2018/12/29/ECMAScript3.0补充/栈与堆.png">
+<meta property="og:updated_time" content="2018-12-28T22:05:21.251Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ECMAScript3.0总结">
+<meta name="twitter:title" content="ECMAScript3.0补充">
 <meta name="twitter:description" content="window与document window指窗口，包含许多对窗口相关的属性与方法； document指文档，包含许多对于文档操作的属性与方法； window通常被省略，文档具体指html元素；  Math对象Math是js内置对象，提供以下api：  Math.random(); 随即产生[0, 1)之间的随机数； Math.floor(); 向下取整； Math.ceil(); 向上取整； M">
 <meta name="twitter:image" content="http://yoursite.com/2018/12/29/ECMAScript3.0补充/arguments.png">
 
@@ -135,7 +136,7 @@
 
 
 
-  <title>ECMAScript3.0总结 | 风不会停息</title>
+  <title>ECMAScript3.0补充 | 风不会停息</title>
   
 
 
@@ -311,7 +312,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">ECMAScript3.0总结</h1>
+          <h1 class="post-title" itemprop="name headline">ECMAScript3.0补充</h1>
         
 
         <div class="post-meta">
@@ -377,7 +378,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  356
+                  407
                 </span>
               
 
@@ -440,7 +441,12 @@
 <li>与闭包区别是，闭包还需要内层函数引用外部变量；</li>
 <li>如果没有函数调用该函数，则属性值为null；</li>
 </ul>
-<p>案例：<br><img src="/2018/12/29/ECMAScript3.0补充/arguments.png" alt="arguments与callee">；</p>
+<p>案例：<br><img src="/2018/12/29/ECMAScript3.0补充/arguments.png" alt="arguments与callee"></p>
+<h2 id="栈与堆"><a href="#栈与堆" class="headerlink" title="栈与堆"></a>栈与堆</h2><ul>
+<li>栈里保存的是值类型数据与保存地址值的指针；</li>
+<li>堆里保存的是引用数据类型的数据；<br>案例：<br><img src="/2018/12/29/ECMAScript3.0补充/栈与堆.png" alt="栈与堆"></li>
+</ul>
+<p>arguments详解：<br><a href="https://www.cnblogs.com/giggle/p/5280812.html" title="arguments与callee" target="_blank" rel="noopener">https://www.cnblogs.com/giggle/p/5280812.html</a></p>
 
       
     </div>
@@ -655,7 +661,7 @@ var jiathis_config={
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#window与document"><span class="nav-number">1.</span> <span class="nav-text">window与document</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Math对象"><span class="nav-number">2.</span> <span class="nav-text">Math对象</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#new"><span class="nav-number">3.</span> <span class="nav-text">new</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#arguments-callee与caller"><span class="nav-number">4.</span> <span class="nav-text">arguments,callee与caller</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#arguments"><span class="nav-number">4.1.</span> <span class="nav-text">arguments</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#callee"><span class="nav-number">4.2.</span> <span class="nav-text">callee</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#caller"><span class="nav-number">4.3.</span> <span class="nav-text">caller</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#window与document"><span class="nav-number">1.</span> <span class="nav-text">window与document</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Math对象"><span class="nav-number">2.</span> <span class="nav-text">Math对象</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#new"><span class="nav-number">3.</span> <span class="nav-text">new</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#arguments-callee与caller"><span class="nav-number">4.</span> <span class="nav-text">arguments,callee与caller</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#arguments"><span class="nav-number">4.1.</span> <span class="nav-text">arguments</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#callee"><span class="nav-number">4.2.</span> <span class="nav-text">callee</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#caller"><span class="nav-number">4.3.</span> <span class="nav-text">caller</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#栈与堆"><span class="nav-number">5.</span> <span class="nav-text">栈与堆</span></a></li></ol></div>
             
 
           </div>
