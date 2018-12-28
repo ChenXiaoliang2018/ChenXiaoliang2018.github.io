@@ -86,18 +86,18 @@
 
 
 
-<meta name="description" content="写在前面 每个函数都有prototype属性（显式原型），默认指向一个空对象； 该空对象（原型对象）的constructor属性指向函数本身； 每个实例对象都有__proto__属性（隐式原型），且该属性对应其构造函数的prototype属性，即fun.__proto__ == Fun.prototype;    实例的隐式原型指向该构造函数的显式原型； 构造函数的prototype默认指向空对象">
+<meta name="description" content="写在前面 每个函数都有prototype属性（显式原型），默认指向一个空对象； 该空对象（原型对象）的constructor属性指向函数本身； 每个实例对象都有__proto__属性（隐式原型），且该属性对应其构造函数的prototype属性，即fun.__proto__ == Fun.prototype;   图片解释 实例的隐式原型指向该构造函数的显式原型； 构造函数的prototype默认指">
 <meta property="og:type" content="article">
 <meta property="og:title" content="关于原型">
 <meta property="og:url" content="http://yoursite.com/2018/12/28/关于原型/index.html">
 <meta property="og:site_name" content="风不会停息">
-<meta property="og:description" content="写在前面 每个函数都有prototype属性（显式原型），默认指向一个空对象； 该空对象（原型对象）的constructor属性指向函数本身； 每个实例对象都有__proto__属性（隐式原型），且该属性对应其构造函数的prototype属性，即fun.__proto__ == Fun.prototype;    实例的隐式原型指向该构造函数的显式原型； 构造函数的prototype默认指向空对象">
+<meta property="og:description" content="写在前面 每个函数都有prototype属性（显式原型），默认指向一个空对象； 该空对象（原型对象）的constructor属性指向函数本身； 每个实例对象都有__proto__属性（隐式原型），且该属性对应其构造函数的prototype属性，即fun.__proto__ == Fun.prototype;   图片解释 实例的隐式原型指向该构造函数的显式原型； 构造函数的prototype默认指">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/2018/12/28/关于原型/原型图解.jpg">
-<meta property="og:updated_time" content="2018-12-28T14:18:25.474Z">
+<meta property="og:updated_time" content="2018-12-28T18:01:58.912Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="关于原型">
-<meta name="twitter:description" content="写在前面 每个函数都有prototype属性（显式原型），默认指向一个空对象； 该空对象（原型对象）的constructor属性指向函数本身； 每个实例对象都有__proto__属性（隐式原型），且该属性对应其构造函数的prototype属性，即fun.__proto__ == Fun.prototype;    实例的隐式原型指向该构造函数的显式原型； 构造函数的prototype默认指向空对象">
+<meta name="twitter:description" content="写在前面 每个函数都有prototype属性（显式原型），默认指向一个空对象； 该空对象（原型对象）的constructor属性指向函数本身； 每个实例对象都有__proto__属性（隐式原型），且该属性对应其构造函数的prototype属性，即fun.__proto__ == Fun.prototype;   图片解释 实例的隐式原型指向该构造函数的显式原型； 构造函数的prototype默认指">
 <meta name="twitter:image" content="http://yoursite.com/2018/12/28/关于原型/原型图解.jpg">
 
 
@@ -354,7 +354,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  247
+                  251
                 </span>
               
 
@@ -385,15 +385,15 @@
 <li>每个实例对象都有__proto__属性（隐式原型），且该属性对应其构造函数的prototype属性，即fun.__proto__ == Fun.prototype;</li>
 </ul>
 <p><img src="/2018/12/28/关于原型/原型图解.jpg" alt="原型图解"></p>
-<ol>
+<h2 id="图片解释"><a href="#图片解释" class="headerlink" title="图片解释"></a>图片解释</h2><ol>
 <li>实例的隐式原型指向该构造函数的显式原型；</li>
 <li>构造函数的prototype默认指向空对象，可以看作是ES内置构造函数Object的实例；</li>
 <li>o1,o2也是Object的实例；</li>
 <li>ES内置构造函数Object的prototype同样指向一个空对象，即null；</li>
 <li>ES内置函数Function的prototype也指向一个空对象，可以看作是Object的实例；</li>
-<li><strong>ES内置函数Object也可以看作是内置函数Funciton的实例</strong>，即<strong>Object.<strong>proto</strong> == Function.prototype</strong>;</li>
-<li><strong>ES内置函数Function可以看作是自身的实例</strong>，即<strong>Function.<strong>proto</strong> == Function.prototype</strong>;</li>
-<li>构造函数Foo也是ES内置函数Function的实例，即<strong>任意函数都可以看作是Function的实例</strong>；</li>
+<li>ES内置函数Object也可以看作是内置函数Funciton的实例，即Object.<strong>proto</strong> == Function.prototype;</li>
+<li>ES内置函数Function可以看作是自身的实例，即Function.<strong>proto</strong> == Function.prototype;</li>
+<li>构造函数Foo也是ES内置函数Function的实例，即任意函数都可以看作是Function的实例；</li>
 </ol>
 
       
@@ -428,6 +428,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/12/29/ECMAScript3.0补充/" rel="prev" title="ECMAScript3.0总结">
+                ECMAScript3.0总结 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -535,7 +539,7 @@ var jiathis_config={
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-count">9</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -603,7 +607,7 @@ var jiathis_config={
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#写在前面"><span class="nav-number">1.</span> <span class="nav-text">写在前面</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#写在前面"><span class="nav-number">1.</span> <span class="nav-text">写在前面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#图片解释"><span class="nav-number">2.</span> <span class="nav-text">图片解释</span></a></li></ol></div>
             
 
           </div>

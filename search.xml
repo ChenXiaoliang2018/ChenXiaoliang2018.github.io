@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[ECMAScript3.0总结]]></title>
+    <url>%2F2018%2F12%2F29%2FECMAScript3.0%E8%A1%A5%E5%85%85%2F</url>
+    <content type="text"><![CDATA[window与document window指窗口，包含许多对窗口相关的属性与方法； document指文档，包含许多对于文档操作的属性与方法； window通常被省略，文档具体指html元素； Math对象Math是js内置对象，提供以下api： Math.random(); 随即产生[0, 1)之间的随机数； Math.floor(); 向下取整； Math.ceil(); 向上取整； Math.round(); 四舍五入取整； Math.max(); 获取一组数据里的最大值； Math.min(); 获取一组数据里的最小值； Math.pow(底数，指数)； 指数； Math.sqrt(); 开方； Math.PI; π newnew一个函数获取对象的过程中究竟发生了什么？ 创建一个新对象； 将构造函数的作用于赋给新对象（修改this指向）； 执行构造函数中的代码（为这个对象添加属性）； 返回新对象； arguments,callee与callerarguments arguments是函数执行时产生的一个类数组对象； 用于保存实参； arguments不能使用数组的方法，但可以遍历，也拥有length属性； callee callee是arguments的一个属性，它的值为正在执行的函数对象； arguments.callee.length表示该函数形参的个数； caller caller是函数的一个属性，表示调用该函数的函数对象； 与闭包区别是，闭包还需要内层函数引用外部变量； 如果没有函数调用该函数，则属性值为null； 案例：；]]></content>
+      <categories>
+        <category>javascript</category>
+      </categories>
+      <tags>
+        <tag>知识</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[关于原型]]></title>
     <url>%2F2018%2F12%2F28%2F%E5%85%B3%E4%BA%8E%E5%8E%9F%E5%9E%8B%2F</url>
-    <content type="text"><![CDATA[写在前面 每个函数都有prototype属性（显式原型），默认指向一个空对象； 该空对象（原型对象）的constructor属性指向函数本身； 每个实例对象都有__proto__属性（隐式原型），且该属性对应其构造函数的prototype属性，即fun.__proto__ == Fun.prototype; 实例的隐式原型指向该构造函数的显式原型； 构造函数的prototype默认指向空对象，可以看作是ES内置构造函数Object的实例； o1,o2也是Object的实例； ES内置构造函数Object的prototype同样指向一个空对象，即null； ES内置函数Function的prototype也指向一个空对象，可以看作是Object的实例； ES内置函数Object也可以看作是内置函数Funciton的实例，即Object.proto == Function.prototype; ES内置函数Function可以看作是自身的实例，即Function.proto == Function.prototype; 构造函数Foo也是ES内置函数Function的实例，即任意函数都可以看作是Function的实例；]]></content>
+    <content type="text"><![CDATA[写在前面 每个函数都有prototype属性（显式原型），默认指向一个空对象； 该空对象（原型对象）的constructor属性指向函数本身； 每个实例对象都有__proto__属性（隐式原型），且该属性对应其构造函数的prototype属性，即fun.__proto__ == Fun.prototype; 图片解释 实例的隐式原型指向该构造函数的显式原型； 构造函数的prototype默认指向空对象，可以看作是ES内置构造函数Object的实例； o1,o2也是Object的实例； ES内置构造函数Object的prototype同样指向一个空对象，即null； ES内置函数Function的prototype也指向一个空对象，可以看作是Object的实例； ES内置函数Object也可以看作是内置函数Funciton的实例，即Object.proto == Function.prototype; ES内置函数Function可以看作是自身的实例，即Function.proto == Function.prototype; 构造函数Foo也是ES内置函数Function的实例，即任意函数都可以看作是Function的实例；]]></content>
   </entry>
   <entry>
     <title><![CDATA[ECMAScript3.0总结]]></title>
