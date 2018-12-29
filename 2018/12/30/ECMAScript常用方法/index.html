@@ -86,18 +86,23 @@
 
 
 
-<meta name="description" content="logo的写法原理 将公司名称放在h1标签内，有助于SEO； 先利用缩进移出公司名称，再利用溢出隐藏来隐藏文本；  写法 text-indent: -999em;  overflow: hidden;  精灵图的使用介绍 将一个项目的小icon制作到一张图上，这样再次访问这些图标时，可以从缓存中寻找，而不用再向服务器请求；  原理 通常利用padding，也可以利用空标签，伪元素给icon留好位置">
+<meta name="description" content="数组 arr.push() 在数组末尾添加数据； 参数：需要添加的数据； 返回值： 新数组的长度； arr.pop() 删除数组的最后一项； 参数： 不需要参数； 返回值：删除的最后一项数据； arr.shift() 在数组开头添加数据； 参数：需要添加的数据； 返回值： 新数组的长度； arr.unshift() 删除数组第一项数据； 参数： 不需要参数； 返回值： 删除的的第一项数据； arr">
 <meta name="keywords" content="知识">
 <meta property="og:type" content="article">
-<meta property="og:title" content="css2.0技巧总结">
-<meta property="og:url" content="http://yoursite.com/2018/12/25/css2.0技巧总结/index.html">
+<meta property="og:title" content="ECMAScript常用方法">
+<meta property="og:url" content="http://yoursite.com/2018/12/30/ECMAScript常用方法/index.html">
 <meta property="og:site_name" content="风不会停息">
-<meta property="og:description" content="logo的写法原理 将公司名称放在h1标签内，有助于SEO； 先利用缩进移出公司名称，再利用溢出隐藏来隐藏文本；  写法 text-indent: -999em;  overflow: hidden;  精灵图的使用介绍 将一个项目的小icon制作到一张图上，这样再次访问这些图标时，可以从缓存中寻找，而不用再向服务器请求；  原理 通常利用padding，也可以利用空标签，伪元素给icon留好位置">
+<meta property="og:description" content="数组 arr.push() 在数组末尾添加数据； 参数：需要添加的数据； 返回值： 新数组的长度； arr.pop() 删除数组的最后一项； 参数： 不需要参数； 返回值：删除的最后一项数据； arr.shift() 在数组开头添加数据； 参数：需要添加的数据； 返回值： 新数组的长度； arr.unshift() 删除数组第一项数据； 参数： 不需要参数； 返回值： 删除的的第一项数据； arr">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-12-26T20:09:45.662Z">
+<meta property="og:image" content="http://yoursite.com/2018/12/30/ECMAScript常用方法/负值截取.png">
+<meta property="og:image" content="http://yoursite.com/2018/12/30/ECMAScript常用方法/升序.png">
+<meta property="og:image" content="http://yoursite.com/2018/12/30/ECMAScript常用方法/快速标签.png">
+<meta property="og:image" content="http://yoursite.com/2018/12/30/ECMAScript常用方法/边界.png">
+<meta property="og:updated_time" content="2018-12-29T19:59:50.754Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="css2.0技巧总结">
-<meta name="twitter:description" content="logo的写法原理 将公司名称放在h1标签内，有助于SEO； 先利用缩进移出公司名称，再利用溢出隐藏来隐藏文本；  写法 text-indent: -999em;  overflow: hidden;  精灵图的使用介绍 将一个项目的小icon制作到一张图上，这样再次访问这些图标时，可以从缓存中寻找，而不用再向服务器请求；  原理 通常利用padding，也可以利用空标签，伪元素给icon留好位置">
+<meta name="twitter:title" content="ECMAScript常用方法">
+<meta name="twitter:description" content="数组 arr.push() 在数组末尾添加数据； 参数：需要添加的数据； 返回值： 新数组的长度； arr.pop() 删除数组的最后一项； 参数： 不需要参数； 返回值：删除的最后一项数据； arr.shift() 在数组开头添加数据； 参数：需要添加的数据； 返回值： 新数组的长度； arr.unshift() 删除数组第一项数据； 参数： 不需要参数； 返回值： 删除的的第一项数据； arr">
+<meta name="twitter:image" content="http://yoursite.com/2018/12/30/ECMAScript常用方法/负值截取.png">
 
 
 
@@ -127,13 +132,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/12/25/css2.0技巧总结/">
+  <link rel="canonical" href="http://yoursite.com/2018/12/30/ECMAScript常用方法/">
 
 
 
 
 
-  <title>css2.0技巧总结 | 风不会停息</title>
+  <title>ECMAScript常用方法 | 风不会停息</title>
   
 
 
@@ -293,7 +298,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/25/css2.0技巧总结/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/30/ECMAScript常用方法/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="陈晓亮">
@@ -310,7 +315,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">css2.0技巧总结</h1>
+          <h1 class="post-title" itemprop="name headline">ECMAScript常用方法</h1>
         
 
         <div class="post-meta">
@@ -322,8 +327,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-25T23:52:49+08:00">
-                2018-12-25
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-30T01:11:41+08:00">
+                2018-12-30
               </time>
             
 
@@ -345,8 +350,8 @@
               
               
                 <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/css/" itemprop="url" rel="index">
-                    <span itemprop="name">css</span>
+                  <a href="/categories/js/" itemprop="url" rel="index">
+                    <span itemprop="name">js</span>
                   </a>
                 </span>
 
@@ -376,7 +381,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  447
+                  1.3k
                 </span>
               
 
@@ -401,46 +406,143 @@
       
 
       
-        <h2 id="logo的写法"><a href="#logo的写法" class="headerlink" title="logo的写法"></a>logo的写法</h2><h3 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h3><ul>
-<li>将公司名称放在h1标签内，有助于SEO；</li>
-<li>先利用缩进移出公司名称，再利用溢出隐藏来隐藏文本；</li>
+        <h2 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h2><ul>
+<li>arr.push() 在数组末尾添加数据；</li>
+<li>参数：需要添加的数据；</li>
+<li>返回值： 新数组的长度；</li>
+<li>arr.pop() 删除数组的最后一项；</li>
+<li>参数： 不需要参数；</li>
+<li>返回值：删除的最后一项数据；</li>
+<li>arr.shift() 在数组开头添加数据；</li>
+<li>参数：需要添加的数据；</li>
+<li>返回值： 新数组的长度；</li>
+<li>arr.unshift() 删除数组第一项数据；</li>
+<li>参数： 不需要参数；</li>
+<li>返回值： 删除的的第一项数据；</li>
+<li>arr.concat() 数组合并；</li>
+<li>参数： 需要合并的数组或者项；</li>
+<li>返回值： 合并后的新数组；</li>
+<li>arr.slice(start, end) 数组截取；</li>
+<li>start：开始截取项的索引值，可为负值;</li>
+<li>end：结束截取项的索引值，可为负值；</li>
+<li>返回值： 截取项组成的新数组；</li>
+<li>当截取项索引值为负值时，末项索引值为-1，单个索引值时默认会截取到最后一项，两个索引值时需注意start&lt;end，否则只能获取一个空数组；</li>
+<li>无论索引值正负，截取顺序都是自左向右；</li>
 </ul>
-<h3 id="写法"><a href="#写法" class="headerlink" title="写法"></a>写法</h3><ul>
-<li>text-indent: -999em; </li>
-<li>overflow: hidden;</li>
+<p>负值截取案例：</p>
+<p><img src="/2018/12/30/ECMAScript常用方法/负值截取.png" alt="负值截取"></p>
+<p>注：<strong>以上方法均未修改原数组；</strong></p>
+<ul>
+<li>数组的删除，替换与插入</li>
+<li>arr.splice(start, how many, elements) </li>
+<li>start: 数组开始删除项的索引值，该参数不可省略；</li>
+<li>how many: 数组删除，替换项的个数，如果是插入的话，该项值为0，该参数不可省略；</li>
+<li>elements： 数组替换，插入的项，当删除项时该项可以省略； </li>
 </ul>
-<h2 id="精灵图的使用"><a href="#精灵图的使用" class="headerlink" title="精灵图的使用"></a>精灵图的使用</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><ul>
-<li>将一个项目的小icon制作到一张图上，这样再次访问这些图标时，可以从缓存中寻找，而不用再向服务器请求；</li>
+<p>注：<strong>splice方法修改了原数组，区别于slice方法；</strong></p>
+<ul>
+<li>arr.reverse() 将数组每一项颠倒;</li>
+<li>参数： 不需要参数；</li>
+<li>返回值： 颠倒后的数组；</li>
+<li>arr.join() 将数组合并为字符串；</li>
+<li>参数： 合并符号；</li>
+<li><p>返回值： 合并后的字符串；</p>
+</li>
+<li><p>arr.sort() 数组的排序；<br>不添加参数时：数组每一项将会转化为字符串，然后按照ASCII码表升序排列，基本顺序为数字，大写字母，小写字母；<br>添加参数时： 当数组项均为数字项时，需自定义函数作为参数来决定数组的排序方式。</p>
+</li>
 </ul>
-<h3 id="原理-1"><a href="#原理-1" class="headerlink" title="原理"></a>原理</h3><ul>
-<li>通常利用padding，也可以利用空标签，伪元素给icon留好位置，再引入图片，然后调整背景图位置来让icon正确的显示；</li>
+<p>升序案例：</p>
+<p><img src="/2018/12/30/ECMAScript常用方法/升序.png" alt="升序"></p>
+<p><strong>注：以上方法均改变了原数组；</strong></p>
+<h2 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h2><ul>
+<li>str.charAt() 字符串索引值对应字符；</li>
+<li>参数： 索引值；</li>
+<li>返回值： 对应项；</li>
+<li>str.indexOf() 字符串该字符首次出现的索引值；</li>
+<li>参数： 字符</li>
+<li>返回值： 索引值，如果不包含该字符，返回-1；</li>
+<li>str.concat() 字符串合并；</li>
+<li>参数： 被合并的字符或字符串；</li>
+<li>返回值： 新的字符串；</li>
+<li>str.slice(start, end) 字符串截取；</li>
+<li>start： 开始截取字符的索引值；</li>
+<li>end： 结束截取字符的索引值；</li>
+<li>返回值： 截取的字符串；</li>
+<li>str.split() 将字符串切割为数组；</li>
+<li>参数： 字符串切割方式；</li>
+<li>返回值： 切割后的数组；</li>
+<li>str.toLowerCase() 字符串小写；</li>
+<li>参数： 无；</li>
+<li>返回值： 将字符串里的大写字母转为小写；</li>
+<li>str.toUpperCase() 字符串大写；</li>
+<li>参数： 无；</li>
+<li>返回值： 将字符串里的小写字母转为大写；</li>
+<li>str.match() 将字符串里首次匹配到的内容转化成一个数组；</li>
+<li>参数： 字符串或正则；</li>
+<li>返回值： 保存匹配内容的数组；</li>
 </ul>
-<h3 id="写法-1"><a href="#写法-1" class="headerlink" title="写法"></a>写法</h3><ul>
-<li>background: url(xx.jpg)  -20px 20px;</li>
+<p>注：match可以全局匹配；</p>
+<p>分组的反向引用：<strong>将正则表达式匹配到的内容分组并再次使用</strong>；</p>
+<ul>
+<li>str.replace(/正则表达式/, function(match, $1,…$n) {})</li>
+<li>match必须书写；</li>
+<li>分组里的$1,..$n必须书写完全，即使函数里未使用；</li>
 </ul>
-<h2 id="单行文本截取"><a href="#单行文本截取" class="headerlink" title="单行文本截取"></a>单行文本截取</h2><h3 id="原理-2"><a href="#原理-2" class="headerlink" title="原理"></a>原理</h3><ul>
-<li>先将段落设置为不换行，然后设置溢出隐藏，最后将超出部分设置为省略号；</li>
+<p>快速标签案例：</p>
+<p><img src="/2018/12/30/ECMAScript常用方法/快速标签.png" alt="快速标签"></p>
+<h2 id="正则表达式"><a href="#正则表达式" class="headerlink" title="正则表达式"></a>正则表达式</h2><ul>
+<li>reg.test(str) 检测字符串里是否含有满足正则的字符；</li>
+<li>参数： 要检测的字符串；</li>
+<li>返回值： 布尔值；</li>
+<li>reg.exac(str) 检测字符串首次满足正则的字符并输出到数组里；</li>
+<li>参数： 被检测的字符串；</li>
+<li>返回值： 首次匹配到的字符串所构成的数组；</li>
+<li>该方法与字符串里的match方法功能相似，不过exac方法不能全局匹配；<h3 id="特殊预定义字符"><a href="#特殊预定义字符" class="headerlink" title="特殊预定义字符"></a>特殊预定义字符</h3></li>
+<li>\n(换行符）,\t（制表符）</li>
+<li>检测该字符需要将字符串转为多行字符串（ES6）;<h3 id="字符集"><a href="#字符集" class="headerlink" title="字符集"></a>字符集</h3></li>
+<li>将多种可能性写在中括号里，如[0-9],[a-z],[A-Z];</li>
+<li>0-9之间为短横而不是~；<h3 id="修饰符"><a href="#修饰符" class="headerlink" title="修饰符"></a>修饰符</h3></li>
+<li>i：字母忽略大小写；</li>
+<li>g：全局匹配；<h3 id="边界"><a href="#边界" class="headerlink" title="边界"></a>边界</h3></li>
+<li>^: 开头匹配；</li>
+<li>$: 结尾匹配；<h4 id="单词边界与非单词边界"><a href="#单词边界与非单词边界" class="headerlink" title="单词边界与非单词边界"></a>单词边界与非单词边界</h4></li>
+<li>单词：\w(数字，字母，下划线)；</li>
+<li>边界：字符之间的位置；</li>
+<li>单词边界： 单词与非单词之间的边界；</li>
+<li>非单词边界： 边界减去单词边界；</li>
 </ul>
-<h3 id="写法-2"><a href="#写法-2" class="headerlink" title="写法"></a>写法</h3><ul>
-<li>white-space: nowrap;</li>
-<li>overflow: hidden;</li>
-<li>text-overflow: ellipsis;</li>
+<p>如：’this is a book’</p>
+<ul>
+<li>边界：’|t|h|i|s| |i|s| |a| |b|o|o|k|’</li>
+<li>单词边界： ‘|this| |is| |a| |book|’；</li>
+<li>非单词边界： ‘t|h|i|s i|s a b|o|o|k’；</li>
 </ul>
-<h2 id="多行文本截取"><a href="#多行文本截取" class="headerlink" title="多行文本截取"></a>多行文本截取</h2><h3 id="原理-3"><a href="#原理-3" class="headerlink" title="原理"></a>原理</h3><ul>
-<li>先将容器设置为弹性盒，再设置内容排列方向，设置显示行数，然后设置溢出隐藏，最后设置超出部分为省略号；</li>
+<p>案例：</p>
+<p><img src="/2018/12/30/ECMAScript常用方法/边界.png" alt="边界"></p>
+<h3 id="量词"><a href="#量词" class="headerlink" title="量词"></a>量词</h3><ul>
+<li>{n} 出现n次；</li>
+<li>{n, m} 出现m次；</li>
+<li><ul>
+<li>出现0次，1次或多次；</li>
 </ul>
-<h3 id="写法-3"><a href="#写法-3" class="headerlink" title="写法"></a>写法</h3><ul>
-<li>display: -webkit- box;</li>
-<li>-webkit- box-orient: vertical;</li>
-<li>-webkit- line-clamp: 行数；</li>
-<li>overflow: hidden;</li>
-<li>text-overflow: ellipsis;</li>
+</li>
+<li><ul>
+<li>出现1次或多次；</li>
 </ul>
-<h2 id="蒙板的实现"><a href="#蒙板的实现" class="headerlink" title="蒙板的实现"></a>蒙板的实现</h2><h3 id="原理-4"><a href="#原理-4" class="headerlink" title="原理"></a>原理</h3><ul>
-<li>利用filter: blur(20px)属性来实现模糊效果，但该模糊效果会模糊当前元素上的所有内容，于是通过给当前元素添加一个一样大小的背景元素（毛玻璃板），在该元素上添加同样的背景图，再利用background-attachment: fixed相对于浏览器窗口位置不变的特性与大背景互相咬合，这样就实现了仿佛透过一层毛玻璃观看大背景的效果，也就是蒙板。</li>
+</li>
+<li>? 出现0次或1次；<h3 id="预定义类"><a href="#预定义类" class="headerlink" title="预定义类"></a>预定义类</h3></li>
+<li>. 除回车，换行外所有字符；</li>
+<li>\w  单词（数字，字母，下划线）；</li>
+<li>\W  非单词；</li>
+<li>\d  数字；</li>
+<li>\D  非数字；</li>
+<li>\s 空格；</li>
+<li>\S 非空格；<h3 id="操作符"><a href="#操作符" class="headerlink" title="操作符"></a>操作符</h3></li>
+<li>| 或操作；</li>
+<li>() 分组；<h3 id="匹配中文"><a href="#匹配中文" class="headerlink" title="匹配中文"></a>匹配中文</h3></li>
+<li>[\u4e00-\u9fa5]</li>
 </ul>
-<p>毛玻璃效果：<br><a href="http://www.cnblogs.com/ghost-xyx/p/5677168.html" title="毛玻璃效果" target="_blank" rel="noopener">http://www.cnblogs.com/ghost-xyx/p/5677168.html</a></p>
-<p>蒙板demo：<br><a href="https://github.com/ChenXiaoliang2018/odds-and-ends/blob/master/%E8%92%99%E6%9D%BF.html" title="蒙板demo" target="_blank" rel="noopener">https://github.com/ChenXiaoliang2018/odds-and-ends/blob/master/%E8%92%99%E6%9D%BF.html</a></p>
+<p>常用正则表达式合集：<br><a href="https://github.com/ChenXiaoliang2018/odds-and-ends/blob/master/%E5%B8%B8%E7%94%A8%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%90%88%E9%9B%86.docx" title="正则合集" target="_blank" rel="noopener">https://github.com/ChenXiaoliang2018/odds-and-ends/blob/master/%E5%B8%B8%E7%94%A8%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%90%88%E9%9B%86.docx</a></p>
 
       
     </div>
@@ -471,8 +573,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/12/23/css2.0知识总结/" rel="next" title="css2.0知识总结">
-                <i class="fa fa-chevron-left"></i> css2.0知识总结
+              <a href="/2018/12/29/关于this/" rel="next" title="关于this">
+                <i class="fa fa-chevron-left"></i> 关于this
               </a>
             
           </div>
@@ -480,10 +582,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/12/26/css3.0知识总结/" rel="prev" title="css3.0知识总结">
-                css3.0知识总结 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -657,7 +755,7 @@ var jiathis_config={
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#logo的写法"><span class="nav-number">1.</span> <span class="nav-text">logo的写法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#原理"><span class="nav-number">1.1.</span> <span class="nav-text">原理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#写法"><span class="nav-number">1.2.</span> <span class="nav-text">写法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#精灵图的使用"><span class="nav-number">2.</span> <span class="nav-text">精灵图的使用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#介绍"><span class="nav-number">2.1.</span> <span class="nav-text">介绍</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#原理-1"><span class="nav-number">2.2.</span> <span class="nav-text">原理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#写法-1"><span class="nav-number">2.3.</span> <span class="nav-text">写法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#单行文本截取"><span class="nav-number">3.</span> <span class="nav-text">单行文本截取</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#原理-2"><span class="nav-number">3.1.</span> <span class="nav-text">原理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#写法-2"><span class="nav-number">3.2.</span> <span class="nav-text">写法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#多行文本截取"><span class="nav-number">4.</span> <span class="nav-text">多行文本截取</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#原理-3"><span class="nav-number">4.1.</span> <span class="nav-text">原理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#写法-3"><span class="nav-number">4.2.</span> <span class="nav-text">写法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#蒙板的实现"><span class="nav-number">5.</span> <span class="nav-text">蒙板的实现</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#原理-4"><span class="nav-number">5.1.</span> <span class="nav-text">原理</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#数组"><span class="nav-number">1.</span> <span class="nav-text">数组</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#字符串"><span class="nav-number">2.</span> <span class="nav-text">字符串</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#正则表达式"><span class="nav-number">3.</span> <span class="nav-text">正则表达式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#特殊预定义字符"><span class="nav-number">3.1.</span> <span class="nav-text">特殊预定义字符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#字符集"><span class="nav-number">3.2.</span> <span class="nav-text">字符集</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修饰符"><span class="nav-number">3.3.</span> <span class="nav-text">修饰符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#边界"><span class="nav-number">3.4.</span> <span class="nav-text">边界</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#单词边界与非单词边界"><span class="nav-number">3.4.1.</span> <span class="nav-text">单词边界与非单词边界</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#量词"><span class="nav-number">3.5.</span> <span class="nav-text">量词</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#预定义类"><span class="nav-number">3.6.</span> <span class="nav-text">预定义类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#操作符"><span class="nav-number">3.7.</span> <span class="nav-text">操作符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#匹配中文"><span class="nav-number">3.8.</span> <span class="nav-text">匹配中文</span></a></li></ol></li></ol></div>
             
 
           </div>
