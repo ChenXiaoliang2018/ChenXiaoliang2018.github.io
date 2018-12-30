@@ -94,7 +94,7 @@
 <meta property="og:site_name" content="风不会停息">
 <meta property="og:description" content="事件流程背景事件是实现js交互效果的媒介，也是DOM的重要组成部分，当多层嵌套盒子都绑定了事件时，点击内层盒子就会触发许多事件，事件流程就规定了事件触发的先后顺序。 规定整个事件流程分为三阶段：  捕获阶段：从最外层节点，一层一层往下，直到触发事件的节点； 目标阶段：目标阶段事件顺序并不是先捕获在冒泡，而是绑定事件的顺序； 冒泡阶段：从触发事件的节点，一层一层往上，直到最外层节点；  事件绑定与解">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-12-30T22:44:25.852Z">
+<meta property="og:updated_time" content="2018-12-30T22:47:53.067Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="DOM事件">
 <meta name="twitter:description" content="事件流程背景事件是实现js交互效果的媒介，也是DOM的重要组成部分，当多层嵌套盒子都绑定了事件时，点击内层盒子就会触发许多事件，事件流程就规定了事件触发的先后顺序。 规定整个事件流程分为三阶段：  捕获阶段：从最外层节点，一层一层往下，直到触发事件的节点； 目标阶段：目标阶段事件顺序并不是先捕获在冒泡，而是绑定事件的顺序； 冒泡阶段：从触发事件的节点，一层一层往上，直到最外层节点；  事件绑定与解">
@@ -444,14 +444,14 @@
 <li>e.pageX,e.pageY 触发事件时，鼠标在屏幕中的位置;</li>
 <li>e.offsetX,e.offsetY 触发事件时，鼠标在元素中的位置;</li>
 </ul>
-<h4 id="阻止冒泡"><a href="#阻止冒泡" class="headerlink" title="阻止冒泡"></a>阻止冒泡</h4><ul>
+<h3 id="阻止冒泡"><a href="#阻止冒泡" class="headerlink" title="阻止冒泡"></a>阻止冒泡</h3><ul>
 <li>e.stopPropagation();</li>
 <li>适用于高级浏览器；</li>
 <li>常用来阻止冒泡，实际也可以阻止捕获；</li>
 <li>e.cancelBubble = true;</li>
 <li>适用于IE浏览器</li>
 </ul>
-<h4 id="阻止默认事件"><a href="#阻止默认事件" class="headerlink" title="阻止默认事件"></a>阻止默认事件</h4><p>默认事件： a标签跳转；submit提交；滚动条滚动屏幕；</p>
+<h3 id="阻止默认事件"><a href="#阻止默认事件" class="headerlink" title="阻止默认事件"></a>阻止默认事件</h3><p>默认事件： a标签跳转；submit提交；滚动条滚动屏幕；</p>
 <ul>
 <li>DOM0级：在执行函数内部书写’return false’;</li>
 <li>高级浏览器：e.preventDefault();</li>
@@ -670,7 +670,7 @@ var jiathis_config={
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#事件流程"><span class="nav-number">1.</span> <span class="nav-text">事件流程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#背景"><span class="nav-number">1.1.</span> <span class="nav-text">背景</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#规定"><span class="nav-number">1.2.</span> <span class="nav-text">规定</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#事件绑定与解绑"><span class="nav-number">2.</span> <span class="nav-text">事件绑定与解绑</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#DOM-0级"><span class="nav-number">2.1.</span> <span class="nav-text">DOM 0级</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#DOM2级"><span class="nav-number">2.2.</span> <span class="nav-text">DOM2级</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#事件对象"><span class="nav-number">3.</span> <span class="nav-text">事件对象</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#常用属性"><span class="nav-number">3.1.</span> <span class="nav-text">常用属性</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#阻止冒泡"><span class="nav-number">3.1.1.</span> <span class="nav-text">阻止冒泡</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#阻止默认事件"><span class="nav-number">3.1.2.</span> <span class="nav-text">阻止默认事件</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#事件流程"><span class="nav-number">1.</span> <span class="nav-text">事件流程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#背景"><span class="nav-number">1.1.</span> <span class="nav-text">背景</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#规定"><span class="nav-number">1.2.</span> <span class="nav-text">规定</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#事件绑定与解绑"><span class="nav-number">2.</span> <span class="nav-text">事件绑定与解绑</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#DOM-0级"><span class="nav-number">2.1.</span> <span class="nav-text">DOM 0级</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#DOM2级"><span class="nav-number">2.2.</span> <span class="nav-text">DOM2级</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#事件对象"><span class="nav-number">3.</span> <span class="nav-text">事件对象</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#常用属性"><span class="nav-number">3.1.</span> <span class="nav-text">常用属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#阻止冒泡"><span class="nav-number">3.2.</span> <span class="nav-text">阻止冒泡</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#阻止默认事件"><span class="nav-number">3.3.</span> <span class="nav-text">阻止默认事件</span></a></li></ol></li></ol></div>
             
 
           </div>
