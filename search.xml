@@ -5,7 +5,7 @@
     <url>%2F2018%2F12%2F30%2FECMAScript3.0%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95%2F</url>
     <content type="text"><![CDATA[数组 arr.push() 在数组末尾添加数据； 参数：需要添加的数据； 返回值： 新数组的长度； arr.pop() 删除数组的最后一项； 参数： 不需要参数； 返回值：删除的最后一项数据； arr.shift() 在数组开头添加数据； 参数：需要添加的数据； 返回值： 新数组的长度； arr.unshift() 删除数组第一项数据； 参数： 不需要参数； 返回值： 删除的的第一项数据； arr.concat() 数组合并； 参数： 需要合并的数组或者项； 返回值： 合并后的新数组； arr.slice(start, end) 数组截取； start：开始截取项的索引值，可为负值; end：结束截取项的索引值，可为负值； 返回值： 截取项组成的新数组； 当截取项索引值为负值时，末项索引值为-1，单个索引值时默认会截取到最后一项，两个索引值时需注意start&lt;end，否则只能获取一个空数组； 无论索引值正负，截取顺序都是自左向右； 负值截取案例： 注：以上方法均未修改原数组； 数组的删除，替换与插入 arr.splice(start, how many, elements) start: 数组开始删除项的索引值，该参数不可省略； how many: 数组删除，替换项的个数，如果是插入的话，该项值为0，该参数不可省略； elements： 数组替换，插入的项，当删除项时该项可以省略； 注：splice方法修改了原数组，区别于slice方法； arr.reverse() 将数组每一项颠倒; 参数： 不需要参数； 返回值： 颠倒后的数组； arr.join() 将数组合并为字符串； 参数： 合并符号； 返回值： 合并后的字符串； arr.sort() 数组的排序；不添加参数时：数组每一项将会转化为字符串，然后按照ASCII码表升序排列，基本顺序为数字，大写字母，小写字母；添加参数时： 当数组项均为数字项时，需自定义函数作为参数来决定数组的排序方式。 升序案例： 注：以上方法均改变了原数组； 字符串 str.charAt() 字符串索引值对应字符； 参数： 索引值； 返回值： 对应项； str.indexOf() 字符串该字符首次出现的索引值； 参数： 字符 返回值： 索引值，如果不包含该字符，返回-1； str.concat() 字符串合并； 参数： 被合并的字符或字符串； 返回值： 新的字符串； str.slice(start, end) 字符串截取； start： 开始截取字符的索引值； end： 结束截取字符的索引值； 返回值： 截取的字符串； str.split() 将字符串切割为数组； 参数： 字符串切割方式； 返回值： 切割后的数组； str.toLowerCase() 字符串小写； 参数： 无； 返回值： 将字符串里的大写字母转为小写； str.toUpperCase() 字符串大写； 参数： 无； 返回值： 将字符串里的小写字母转为大写； str.match() 将字符串里首次匹配到的内容转化成一个数组； 参数： 字符串或正则； 返回值： 保存匹配内容的数组； 注：match可以全局匹配； 分组的反向引用：将正则表达式匹配到的内容分组并再次使用； str.replace(/正则表达式/, function(match, $1,…$n) {}) match必须书写； 分组里的$1,..$n必须书写完全，即使函数里未使用； 快速标签案例： 正则表达式 reg.test(str) 检测字符串里是否含有满足正则的字符； 参数： 要检测的字符串； 返回值： 布尔值； reg.exac(str) 检测字符串首次满足正则的字符并输出到数组里； 参数： 被检测的字符串； 返回值： 首次匹配到的字符串所构成的数组； 该方法与字符串里的match方法功能相似，不过exac方法不能全局匹配；特殊预定义字符 \n(换行符）,\t（制表符） 检测该字符需要将字符串转为多行字符串（ES6）;字符集 将多种可能性写在中括号里，如[0-9],[a-z],[A-Z]; 0-9之间为短横而不是~；修饰符 i：字母忽略大小写； g：全局匹配；边界 ^: 开头匹配； $: 结尾匹配；单词边界与非单词边界 单词：\w(数字，字母，下划线)； 边界：字符之间的位置； 单词边界： 单词与非单词之间的边界； 非单词边界： 边界减去单词边界； 如：’this is a book’ 边界：’|t|h|i|s| |i|s| |a| |b|o|o|k|’ 单词边界： ‘|this| |is| |a| |book|’； 非单词边界： ‘t|h|i|s i|s a b|o|o|k’； 案例： 量词 {n} 出现n次； {n, m} 出现m次； * 出现0次，1次或多次； + 出现1次或多次； ? 出现0次或1次；预定义类 . 除回车，换行外所有字符； \w 单词（数字，字母，下划线）； \W 非单词； \d 数字； \D 非数字； \s 空格； \S 非空格；操作符 | 或操作； () 分组；匹配中文 [\u4e00-\u9fa5] 常用正则表达式合集：https://github.com/ChenXiaoliang2018/odds-and-ends/blob/master/%E5%B8%B8%E7%94%A8%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%90%88%E9%9B%86.docx]]></content>
       <categories>
-        <category>js</category>
+        <category>javascript</category>
       </categories>
       <tags>
         <tag>知识</tag>
@@ -16,7 +16,7 @@
     <url>%2F2018%2F12%2F29%2F%E5%85%B3%E4%BA%8Ethis%2F</url>
     <content type="text"><![CDATA[前言this作为一个函数的关键字，在不同的情况下调用函数，this就代表着不同的值，一下就对this的常见调用进行了总结； 纯粹的函数调用 此时this指向window对象； 对象的方法调用 此时this指向该对象； 构造函数的实例调用 此时this指向实例； call，apply调用 此时this指向call修改的对象； 总结实际上，this总是指向函数调用时的环境对象； 详细介绍：http://www.ruanyifeng.com/blog/2010/04/using_this_keyword_in_javascript.html this原理：http://www.ruanyifeng.com/blog/2018/06/javascript-this.html]]></content>
       <categories>
-        <category>js</category>
+        <category>javascript</category>
       </categories>
       <tags>
         <tag>知识</tag>
