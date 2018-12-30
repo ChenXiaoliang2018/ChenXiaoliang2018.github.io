@@ -86,18 +86,18 @@
 
 
 
-<meta name="description" content="事件流程背景 事件是实现js交互效果的媒介，也是DOM的重要组成部分，当多层嵌套盒子都绑定了事件时，点击内层盒子就会触发许多事件，事件流程就规定了事件触发的先后顺序。 规定整个事件流程分为三阶段：  捕获阶段：从最外层节点，一层一层往下，直到触发事件的节点；  目标阶段：目标阶段事件顺序并不是先捕获在冒泡，而是绑定事件的顺序； 冒泡阶段：从触发事件的节点，一层一层往上，直到最外层节点；  事件绑定">
+<meta name="description" content="事件流程背景事件是实现js交互效果的媒介，也是DOM的重要组成部分，当多层嵌套盒子都绑定了事件时，点击内层盒子就会触发许多事件，事件流程就规定了事件触发的先后顺序。 规定整个事件流程分为三阶段：  捕获阶段：从最外层节点，一层一层往下，直到触发事件的节点； 目标阶段：目标阶段事件顺序并不是先捕获在冒泡，而是绑定事件的顺序； 冒泡阶段：从触发事件的节点，一层一层往上，直到最外层节点；  事件绑定与解">
 <meta name="keywords" content="知识">
 <meta property="og:type" content="article">
 <meta property="og:title" content="DOM事件">
 <meta property="og:url" content="http://yoursite.com/2018/12/31/DOM事件/index.html">
 <meta property="og:site_name" content="风不会停息">
-<meta property="og:description" content="事件流程背景 事件是实现js交互效果的媒介，也是DOM的重要组成部分，当多层嵌套盒子都绑定了事件时，点击内层盒子就会触发许多事件，事件流程就规定了事件触发的先后顺序。 规定整个事件流程分为三阶段：  捕获阶段：从最外层节点，一层一层往下，直到触发事件的节点；  目标阶段：目标阶段事件顺序并不是先捕获在冒泡，而是绑定事件的顺序； 冒泡阶段：从触发事件的节点，一层一层往上，直到最外层节点；  事件绑定">
+<meta property="og:description" content="事件流程背景事件是实现js交互效果的媒介，也是DOM的重要组成部分，当多层嵌套盒子都绑定了事件时，点击内层盒子就会触发许多事件，事件流程就规定了事件触发的先后顺序。 规定整个事件流程分为三阶段：  捕获阶段：从最外层节点，一层一层往下，直到触发事件的节点； 目标阶段：目标阶段事件顺序并不是先捕获在冒泡，而是绑定事件的顺序； 冒泡阶段：从触发事件的节点，一层一层往上，直到最外层节点；  事件绑定与解">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-12-30T22:38:46.465Z">
+<meta property="og:updated_time" content="2018-12-30T22:44:25.852Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="DOM事件">
-<meta name="twitter:description" content="事件流程背景 事件是实现js交互效果的媒介，也是DOM的重要组成部分，当多层嵌套盒子都绑定了事件时，点击内层盒子就会触发许多事件，事件流程就规定了事件触发的先后顺序。 规定整个事件流程分为三阶段：  捕获阶段：从最外层节点，一层一层往下，直到触发事件的节点；  目标阶段：目标阶段事件顺序并不是先捕获在冒泡，而是绑定事件的顺序； 冒泡阶段：从触发事件的节点，一层一层往上，直到最外层节点；  事件绑定">
+<meta name="twitter:description" content="事件流程背景事件是实现js交互效果的媒介，也是DOM的重要组成部分，当多层嵌套盒子都绑定了事件时，点击内层盒子就会触发许多事件，事件流程就规定了事件触发的先后顺序。 规定整个事件流程分为三阶段：  捕获阶段：从最外层节点，一层一层往下，直到触发事件的节点； 目标阶段：目标阶段事件顺序并不是先捕获在冒泡，而是绑定事件的顺序； 冒泡阶段：从触发事件的节点，一层一层往上，直到最外层节点；  事件绑定与解">
 
 
 
@@ -401,12 +401,10 @@
       
 
       
-        <h2 id="事件流程"><a href="#事件流程" class="headerlink" title="事件流程"></a>事件流程</h2><h3 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h3><ul>
-<li><p>事件是实现js交互效果的媒介，也是DOM的重要组成部分，当多层嵌套盒子都绑定了事件时，点击内层盒子就会触发许多事件，事件流程就规定了事件触发的先后顺序。</p>
+        <h2 id="事件流程"><a href="#事件流程" class="headerlink" title="事件流程"></a>事件流程</h2><h3 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h3><p>事件是实现js交互效果的媒介，也是DOM的重要组成部分，当多层嵌套盒子都绑定了事件时，点击内层盒子就会触发许多事件，事件流程就规定了事件触发的先后顺序。</p>
 <h3 id="规定"><a href="#规定" class="headerlink" title="规定"></a>规定</h3><p>整个事件流程分为三阶段：</p>
-</li>
-<li><p>捕获阶段：从最外层节点，一层一层往下，直到触发事件的节点；</p>
-</li>
+<ul>
+<li>捕获阶段：从最外层节点，一层一层往下，直到触发事件的节点；</li>
 <li>目标阶段：<strong>目标阶段事件顺序并不是先捕获在冒泡，而是绑定事件的顺序</strong>；</li>
 <li>冒泡阶段：从触发事件的节点，一层一层往上，直到最外层节点；</li>
 </ul>
@@ -416,7 +414,9 @@
 <li>相同事件只能绑定一个执行函数，绑定多个函数后者会层叠掉前者；</li>
 <li>同一节点可以同时绑定DOM0级与DOM2级，且DOM0级总是先执行；</li>
 <li>this指向触发事件的对象；</li>
-<li>解除绑定：dom.onclick = null;<h3 id="DOM2级"><a href="#DOM2级" class="headerlink" title="DOM2级"></a>DOM2级</h3></li>
+<li>解除绑定：dom.onclick = null;</li>
+</ul>
+<h3 id="DOM2级"><a href="#DOM2级" class="headerlink" title="DOM2级"></a>DOM2级</h3><ul>
 <li>dom.addEventListener(type, fn1, boolean);</li>
 <li>适用于高级浏览器；</li>
 <li>事件名不添加’on’,如’click’；</li>
@@ -442,16 +442,18 @@
 <li>e.screenX,e.screenY 触发事件时，鼠标在屏幕中的位置；</li>
 <li>e.clientX,e.clientY 触发事件时，鼠标在屏幕中的位置;</li>
 <li>e.pageX,e.pageY 触发事件时，鼠标在屏幕中的位置;</li>
-<li>e.offsetX,e.offsetY 触发事件时，鼠标在元素中的位置;<h4 id="阻止冒泡"><a href="#阻止冒泡" class="headerlink" title="阻止冒泡"></a>阻止冒泡</h4></li>
+<li>e.offsetX,e.offsetY 触发事件时，鼠标在元素中的位置;</li>
+</ul>
+<h4 id="阻止冒泡"><a href="#阻止冒泡" class="headerlink" title="阻止冒泡"></a>阻止冒泡</h4><ul>
 <li>e.stopPropagation();</li>
 <li>适用于高级浏览器；</li>
 <li>常用来阻止冒泡，实际也可以阻止捕获；</li>
 <li>e.cancelBubble = true;</li>
-<li><p>适用于IE浏览器</p>
+<li>适用于IE浏览器</li>
+</ul>
 <h4 id="阻止默认事件"><a href="#阻止默认事件" class="headerlink" title="阻止默认事件"></a>阻止默认事件</h4><p>默认事件： a标签跳转；submit提交；滚动条滚动屏幕；</p>
-</li>
-<li><p>DOM0级：在执行函数内部书写’return false’;</p>
-</li>
+<ul>
+<li>DOM0级：在执行函数内部书写’return false’;</li>
 <li>高级浏览器：e.preventDefault();</li>
 <li>IE浏览器： e.returnValue = false;</li>
 </ul>

@@ -94,7 +94,7 @@
 <meta property="og:site_name" content="风不会停息">
 <meta property="og:description" content="前言DOM(Document Object Model):文档对象模型，它构建了一个层次化的节点树，通过DOM提供的api，开发者可以更便捷的操作节点，修改样式，事件监听，获取元素的尺寸位置等； 获取节点的常用方式 document.getElementById(); 参数： id名，不需要添加’#’； 返回值： 一个节点对象； document.getElementsByClassName();">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-12-30T21:07:10.216Z">
+<meta property="og:updated_time" content="2018-12-30T22:46:00.232Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="DOM节点操作">
 <meta name="twitter:description" content="前言DOM(Document Object Model):文档对象模型，它构建了一个层次化的节点树，通过DOM提供的api，开发者可以更便捷的操作节点，修改样式，事件监听，获取元素的尺寸位置等； 获取节点的常用方式 document.getElementById(); 参数： id名，不需要添加’#’； 返回值： 一个节点对象； document.getElementsByClassName();">
@@ -419,7 +419,9 @@
 <li>参数： 选择器名称；</li>
 <li>返回值： 符合选择器名称的节点所构成的类数组对象；</li>
 <li>document.documentElement 选中html根节点；</li>
-<li>document.body 选中body节点；<h2 id="设置属性的常用方式"><a href="#设置属性的常用方式" class="headerlink" title="设置属性的常用方式"></a>设置属性的常用方式</h2></li>
+<li>document.body 选中body节点；</li>
+</ul>
+<h2 id="设置属性的常用方式"><a href="#设置属性的常用方式" class="headerlink" title="设置属性的常用方式"></a>设置属性的常用方式</h2><ul>
 <li>点语法：利用节点对象打点调用属性，如dom.className；</li>
 <li>点语法无法设置自定义属性；</li>
 <li>一些属性在调用时会发生相应改变，如class&gt;&gt;className,for&gt;&gt;htmlFor,colspan&gt;&gt;colSpan;</li>
@@ -435,15 +437,11 @@
 <h3 id="设置样式的常用方式"><a href="#设置样式的常用方式" class="headerlink" title="设置样式的常用方式"></a>设置样式的常用方式</h3><ul>
 <li>dom.style.backgroundColor = ‘green’;</li>
 <li>该方法获取到的是行内样式组成的类数组对象；</li>
-<li><p>复杂属性使用驼峰命名法；</p>
-</li>
-<li><p>window.getComputedStyle(dom)[属性名]；</p>
-</li>
+<li>复杂属性使用驼峰命名法；</li>
+<li>window.getComputedStyle(dom)[属性名]；</li>
 <li>该方法适用于高级浏览器获取计算后的样式；</li>
-<li><p>符合属性名可以使用短横或驼峰命名；</p>
-</li>
-<li><p>dom.currentStyle(属性名)；</p>
-</li>
+<li>符合属性名可以使用短横或驼峰命名；</li>
+<li>dom.currentStyle(属性名)；</li>
 <li>该方法适用于IE6,7,8;</li>
 <li>复杂属性名使用驼峰命名；</li>
 </ul>
@@ -473,7 +471,9 @@
 <li>firstChild 第一个子节点；</li>
 <li>lastChild 最后一个字节点；</li>
 <li>previousSibling 前一个兄弟；</li>
-<li>nextSibling 后一个兄弟；<h3 id="节点操作"><a href="#节点操作" class="headerlink" title="节点操作"></a>节点操作</h3></li>
+<li>nextSibling 后一个兄弟；</li>
+</ul>
+<h3 id="节点操作"><a href="#节点操作" class="headerlink" title="节点操作"></a>节点操作</h3><ul>
 <li>document.createElement(标签名) 创建一个未上树的节点；</li>
 <li>father.appendChild(dom)  将dom节点添加到父节点的最后面；</li>
 <li>father.removeChild(dom)  移除dom子节点；</li>
