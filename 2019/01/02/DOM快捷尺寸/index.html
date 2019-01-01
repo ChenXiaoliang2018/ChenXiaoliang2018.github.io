@@ -86,16 +86,20 @@
 
 
 
+<meta name="description" content="快捷尺寸快捷尺寸： 原生js可以通过一些属性或方法快速得到节点的一些属性。  dom.clientWidth,dom.clientHeight; dom节点的内容宽与内容高(width＋padding); dom.offsetWidth,dom.offsetHeight; dom节点的盒子宽，盒子高(width＋padding+border); dom.clientLeft,dom.clientT">
 <meta name="keywords" content="知识">
 <meta property="og:type" content="article">
 <meta property="og:title" content="DOM快捷尺寸">
 <meta property="og:url" content="http://yoursite.com/2019/01/02/DOM快捷尺寸/index.html">
 <meta property="og:site_name" content="风不会停息">
+<meta property="og:description" content="快捷尺寸快捷尺寸： 原生js可以通过一些属性或方法快速得到节点的一些属性。  dom.clientWidth,dom.clientHeight; dom节点的内容宽与内容高(width＋padding); dom.offsetWidth,dom.offsetHeight; dom节点的盒子宽，盒子高(width＋padding+border); dom.clientLeft,dom.clientT">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/2019/01/02/DOM快捷尺寸/拖拽模型.gif">
-<meta property="og:updated_time" content="2019-01-01T18:13:54.697Z">
+<meta property="og:image" content="http://yoursite.com/2019/01/02/DOM快捷尺寸/裁剪模型.gif">
+<meta property="og:updated_time" content="2019-01-01T19:35:43.800Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="DOM快捷尺寸">
+<meta name="twitter:description" content="快捷尺寸快捷尺寸： 原生js可以通过一些属性或方法快速得到节点的一些属性。  dom.clientWidth,dom.clientHeight; dom节点的内容宽与内容高(width＋padding); dom.offsetWidth,dom.offsetHeight; dom节点的盒子宽，盒子高(width＋padding+border); dom.clientLeft,dom.clientT">
 <meta name="twitter:image" content="http://yoursite.com/2019/01/02/DOM快捷尺寸/拖拽模型.gif">
 
 
@@ -375,7 +379,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  0
+                  720
                 </span>
               
 
@@ -400,7 +404,43 @@
       
 
       
-        <p><img src="/2019/01/02/DOM快捷尺寸/拖拽模型.gif" alt="拖拽模型"></p>
+        <h2 id="快捷尺寸"><a href="#快捷尺寸" class="headerlink" title="快捷尺寸"></a>快捷尺寸</h2><p>快捷尺寸： 原生js可以通过一些属性或方法快速得到节点的一些属性。</p>
+<ul>
+<li>dom.clientWidth,dom.clientHeight;</li>
+<li>dom节点的内容宽与内容高(width＋padding);</li>
+<li>dom.offsetWidth,dom.offsetHeight;</li>
+<li>dom节点的盒子宽，盒子高(width＋padding+border);</li>
+<li>dom.clientLeft,dom.clientTop;</li>
+<li>dom节点的左边框，上边框宽度,<strong>不能获取dom节点右边框与下边框宽度</strong>；</li>
+<li>dom.offsetParent;</li>
+<li>dom节点的<strong>定位父节点</strong>，区别于dom.parentNode；</li>
+<li>dom.offsetLeft,dom.offsetTop;</li>
+<li>dom节点的left定位值，top定位值，没有right与bottom；</li>
+</ul>
+<h2 id="拖拽模型"><a href="#拖拽模型" class="headerlink" title="拖拽模型"></a>拖拽模型</h2><p><img src="/2019/01/02/DOM快捷尺寸/拖拽模型.gif" alt="拖拽模型"></p>
+<h3 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h3><ul>
+<li>鼠标拖拽小方块，小方块随之移动，同时右侧方块同步显示放大后的图片；<h3 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h3></li>
+<li>布局：左侧存放小背景图，右侧存放大背景图，小方块也存放小背景图；</li>
+<li>鼠标拖动，通过事件对象获取移动的距离，然后修改小方块的定位值，实现了小方块的同步拖动；</li>
+<li>通过鼠标移动距离，修改小方块背景图的位置，实现了小方块与左侧方块背景的统一；</li>
+<li>通过鼠标移动距离，放大相应的<strong>倍数(右侧背景图与左侧方块大小的比值</strong>）来修改右侧方块背景图的位置，实现了同步放大；<h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3></li>
+<li>onmousemove事件最好添加给document，方便拖动；</li>
+<li>因为快捷尺寸，事件对象获取的都是数值，所以修改样式需添加上’px’；</li>
+<li>小方块定位值的限定条件是不能大于盒子宽度减去小方块宽度；</li>
+</ul>
+<h2 id="裁剪模型"><a href="#裁剪模型" class="headerlink" title="裁剪模型"></a>裁剪模型</h2><p><img src="/2019/01/02/DOM快捷尺寸/裁剪模型.gif" alt="裁剪模型"></p>
+<h3 id="描述-1"><a href="#描述-1" class="headerlink" title="描述"></a>描述</h3><ul>
+<li>鼠标拖动红点，选中区域随之变化，鼠标拖动方块，方块随之移动；<h3 id="原理-1"><a href="#原理-1" class="headerlink" title="原理"></a>原理</h3></li>
+<li>布局：盒子有一张插入图填充完全，与插入图同层级的还有蒙板与裁剪区域，裁剪区域背景图与插入图完全相同，裁剪区域内部的红点用来控制裁剪范围；</li>
+<li>拖拽部分与上面模型完全一致(包括裁剪区域的同步拖动与背景图同步移动)；</li>
+<li>裁剪区域范围的改变是通过小红点拖动的距离来修改裁剪区域的宽高来实现的；<h3 id="注意事项-1"><a href="#注意事项-1" class="headerlink" title="注意事项"></a>注意事项</h3></li>
+<li>因为红点是裁剪区域的子节点，而且二者都绑定了onmousemove事件，所以子节点红点要阻止冒泡;</li>
+<li>onmousemove事件最好添加给document，方便拖动；</li>
+<li>因为快捷尺寸，事件对象获取的都是数值，所以修改样式需添加上’px’；</li>
+<li>裁剪区域宽度的限定条件是不能大于盒子宽度减去裁剪区域的定位值；</li>
+</ul>
+<p>拖拽模型：<br><a href="https://github.com/ChenXiaoliang2018/odds-and-ends/blob/master/%E6%8B%96%E6%8B%BD%E6%A8%A1%E5%9E%8B.html" title="拖拽模型" target="_blank" rel="noopener">https://github.com/ChenXiaoliang2018/odds-and-ends/blob/master/%E6%8B%96%E6%8B%BD%E6%A8%A1%E5%9E%8B.html</a></p>
+<p>裁剪模型：<br><a href="https://github.com/ChenXiaoliang2018/odds-and-ends/blob/master/%E8%A3%81%E5%89%AA%E6%A8%A1%E5%9E%8B.html" title="裁剪模型" target="_blank" rel="noopener">https://github.com/ChenXiaoliang2018/odds-and-ends/blob/master/%E8%A3%81%E5%89%AA%E6%A8%A1%E5%9E%8B.html</a></p>
 
       
     </div>
@@ -520,8 +560,17 @@ var jiathis_config={
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -594,6 +643,22 @@ var jiathis_config={
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#快捷尺寸"><span class="nav-number">1.</span> <span class="nav-text">快捷尺寸</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#拖拽模型"><span class="nav-number">2.</span> <span class="nav-text">拖拽模型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#描述"><span class="nav-number">2.1.</span> <span class="nav-text">描述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#原理"><span class="nav-number">2.2.</span> <span class="nav-text">原理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#注意事项"><span class="nav-number">2.3.</span> <span class="nav-text">注意事项</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#裁剪模型"><span class="nav-number">3.</span> <span class="nav-text">裁剪模型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#描述-1"><span class="nav-number">3.1.</span> <span class="nav-text">描述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#原理-1"><span class="nav-number">3.2.</span> <span class="nav-text">原理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#注意事项-1"><span class="nav-number">3.3.</span> <span class="nav-text">注意事项</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
