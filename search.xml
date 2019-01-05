@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[鼠标滚轮与键盘事件]]></title>
+    <url>%2F2019%2F01%2F05%2F%E9%BC%A0%E6%A0%87%E6%BB%9A%E8%BD%AE%E4%B8%8E%E9%94%AE%E7%9B%98%E4%BA%8B%E4%BB%B6%2F</url>
+    <content type="text"><![CDATA[鼠标滚轮事件非火狐浏览器 document.onmousewheel = function(e) {}; 事件对象：e.wheelDelta; 向下滚动：-120的倍数； 向上滚动： 120的倍数； 火狐浏览器 document.addEventListener(‘DOMMouseScroll’, function(e){}); 事件对象：e.detail; 向下滚动：3的倍数； 向上滚动： -3的倍数； 键盘事件 document.onkeydown = function(e) {} 键盘摁下； docuemnt.onkeypress = function(e) {} 键盘摁住； document.onkeyup = function(e) {} 键盘抬起； e.key 摁下键盘的字符； e.keyCode 摁下键盘的字符编码； 注： 如果想要给div元素添加键盘事件，需要给div元素添加tabIndex属性； 小钢琴demo:https://github.com/ChenXiaoliang2018/odds-and-ends/blob/master/%E9%92%A2%E7%90%B4.html keyCode值表：https://github.com/ChenXiaoliang2018/images/blob/master/keyCode%E5%80%BC%E8%A1%A8.png]]></content>
+      <categories>
+        <category>javascript</category>
+      </categories>
+      <tags>
+        <tag>知识</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[函数防抖与函数节流]]></title>
     <url>%2F2019%2F01%2F05%2F%E5%87%BD%E6%95%B0%E9%98%B2%E6%8A%96%E4%B8%8E%E5%87%BD%E6%95%B0%E8%8A%82%E6%B5%81%2F</url>
     <content type="text"><![CDATA[应用背景对于高频率事件，如onresize, onscroll,onmousemove等，很有可能在短时间内被多次触发，当事件回调函数比较复杂时，很可能会造成浏览器的崩溃，因此，针对不同需求，我们需要对事件回调函数进行相应的处理； 案例： var n = 0; function resizeHandler() { console.log(++n) } window.onresize = resizeHandler; 函数防抖定义 多次触发事件，我们希望在最后一次触发事件后执行回调函数； 仅仅调用一次； 原理 将回调函数包裹到到延时器内，因为延时时间通常都远大于高频事件的触发时间，每次触发事件后，都会先关闭延时器，再打开延时器，只有最后一次触发事件才会执行回调函数； 常见防抖方式第一种function debounce(method,context){ clearTimeout(method.tId); method.tId=setTimeout(function(){ method.call(context); },500); } 执行： window.onresize = function() { debounce(resizeHandler, window) }; 在throttle函数内部，将延时器作为函数的属性添加给函数，并传入回调函数与执行环境； 第二种function debounce(method,delay){ var timer = null; return function(){ var context = this, args = arguments; clearTimeout(timer); timer = setTimeout(function(){ method.apply(context,args); },delay); } } 执行： var n = 0; function resizeHandler() { console.log(++n) } window.onresize = debounce(resizeHandler, 500); 在throttle函数内部，利用闭包返回一个包裹延时器的函数，并利用闭包的特性不断更新延时器； 应用场景 搜索框搜索输入。只需用户最后一次输入完，再发送请求 手机号、邮箱验证输入检测 窗口大小Resize。只需窗口调整完成后，计算窗口大小。防止重复渲染。 函数节流定义 多次触发事件，我们希望到达一定时间间隔才会去执行回调函数； 减少回调函数执行频率； 原理 利用闭包能记住外部变量的特性，在执行函数前比较两次触发事件的间隔时间是否大于规定的时间，满足则执行回调函数，不满足则不执行，减少了回调函数的执行频率； 常见节流方式function throttle(method,duration){ var begin=new Date(); return function(){ var context=this, args=arguments, current=new Date(); if(current-begin&gt;=duration){ method.apply(context,args); begin=current; } } } 应用场景 滚动加载，加载更多或滚到底部监听 谷歌搜索框，搜索联想功能 高频点击提交，表单重复提交 详细介绍：https://www.jianshu.com/p/f9f6b637fd6c]]></content>
